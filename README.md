@@ -3,7 +3,7 @@
 ## Description
 This code reproduces the simulations in the following paper:
 
-Fernando da Silva Borges,  Joao V.S. Moreira,  Lavinia M. Takarabe,  William W. Lytton,  Salvador Dura-Bernal. **Large-scale biophysically detailed model of somatosensory thalamocortical circuits in NetPyNE**. https://doi.org/10.1101/2022.02.03.479029
+Fernando da Silva Borges,  Joao V.S. Moreira,  Lavinia M. Takarabe,  William W. Lytton,  Salvador Dura-Bernal. **Large-scale biophysically detailed model of somatosensory thalamocortical circuits in NetPyNE**. Frontiers in Neuroinformatics. https://doi.org/10.1101/2022.02.03.479029
 
 We implemented a NetPyNE version of a highly detailed and complex model somatosensory cortex (S1) originally developed by Markram et al 2015. We implemented the model using the data available in the Neocortical Microcircuit Collaboration Portal. We also extended the model by adding thalamic circuits, including 6 distinct thalamic populations with intrathalamic, thalamocortical and corticothalamic connectivity derived from experimental data. Our work provides a widely accessible, data-driven and biophysically-detailed model of the somatosensory thalamocortical circuits that can be utilized as a community tool for researchers to study neural dynamics, function and disease.
 
