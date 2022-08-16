@@ -23,7 +23,7 @@ reducedtest = False
 # Load 207 Morpho-electrical Names used to import the cells from 'cell_data/' -> L1:14 L23:43 L4:46 L5:52 L6:52
 # Create [Morphological,Electrical] = number of cell metype in the sub-pop
 
-with open('../info/anatomy/S1-cells-distributions-Rat.txt') as mtype_file:
+with open('cells/S1-cells-distributions-Rat.txt') as mtype_file:
     mtype_content = mtype_file.read()       
 
 popNumber = {}

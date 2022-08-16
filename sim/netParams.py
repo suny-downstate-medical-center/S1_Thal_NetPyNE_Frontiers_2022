@@ -98,52 +98,6 @@ for popName in cfg.thalamicpops:
 #------------------------------------------------------------------------------
 # Cell parameters  # L1 70  L23 215  L4 230 L5 260  L6 260  = 1035
 #------------------------------------------------------------------------------
-if not cfg.loadcellsfromJSON:     ## Load cell rules using BBP template
-    
-    def loadTemplateName(cellMe):     
-        outFolder = cfg.rootFolder+'/cell_data/'+cellMe
-        try:
-            f = open(outFolder+'/template.hoc', 'r')
-            for line in f.readlines():
-                if 'begintemplate' in line:
-                    return str(line)[14:-1]     
-        except:
-            print('Cannot read cell template from %s' % (outFolder))
-            return False
-
-    cellnumber = 0    
-    for cellName in cfg.S1cells:
-
-        if cfg.cellNumber[cellName] < 5:
-            morphoNumbers = cfg.cellNumber[cellName]
-        else:
-            morphoNumbers = 5
-
-        for morphoNumber in range(morphoNumbers):
-            cellMe = cfg.cellLabel[cellName] + '_' + str(morphoNumber+1)
-            print(cellMe,cellName)
-
-            cellTemplateName = loadTemplateName(cellMe)
-
-            if cellTemplateName:
-
-                cellRule = netParams.importCellParams(label=cellMe, somaAtOrigin=True,
-                    conds={'cellType': cellMe, 'cellModel': 'HH_full'},
-                    fileName='cellwrapper.py',
-                    cellName='loadCell',
-                    cellInstance = True,
-                    cellArgs={'cellName': cellMe, 'cellTemplateName': cellTemplateName})
-
-                netParams.renameCellParamsSec(label=cellMe, oldSec='soma_0', newSec='soma')              
-                for secname2 in netParams.cellParams[cellMe]['secLists'].keys():
-                 if 'soma_0' in netParams.cellParams[cellMe]['secLists'][secname2]:
-                   print(cellMe,secname2,netParams.cellParams[cellMe]['secLists'][secname2][0])
-                   netParams.cellParams[cellMe]['secLists'][secname2][0] = 'soma'    
-
-
-#------------------------------------------------------------------------------
-# Cell parameters  # L1 70  L23 215  L4 230 L5 260  L6 260  = 1035
-#------------------------------------------------------------------------------
 ## S1 cell property rules
 
 for cellName in cfg.S1cells:
@@ -156,9 +110,11 @@ for cellName in cfg.S1cells:
     cellFraction = 1.0/morphoNumbers
     
     for morphoNumber in range(morphoNumbers):
+        
         cellMe = cfg.cellLabel[cellName] + '_' + str(morphoNumber+1)
         
         netParams.loadCellParamsRule(label = cellMe, fileName = 'cells/' + cellMe + '_cellParams.json')   
+
         cellRule = {'conds': {'cellType': cellName}, 'diversityFraction': cellFraction, 'secs': {}}  # cell rule dict
         cellRule['secs'] = netParams.cellParams[cellMe]['secs']     
         cellRule['conds'] = netParams.cellParams[cellMe]['conds']    
