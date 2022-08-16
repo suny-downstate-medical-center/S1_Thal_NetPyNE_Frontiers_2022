@@ -714,7 +714,7 @@ if cfg.connectTh:
 if cfg.connect_Th_S1:
 
     # mtype VPM_sTC POm_sTC_s1 nameref
-    with open('../info/anatomy/convergence_Th_S1.txt') as mtype_file:
+    with open('conn/convergence_Th_S1.txt') as mtype_file:
         mtype_content = mtype_file.read()       
 
     convergence_Th_S1 = {}
