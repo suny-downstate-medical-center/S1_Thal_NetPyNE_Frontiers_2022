@@ -1,7 +1,7 @@
 """
 batch.py 
 
-Batch simulation for S1 model using NetPyNE
+Batch simulation for S1-thalamus model using NetPyNE
 
 Contributors: salvadordura@gmail.com, fernandodasilvaborges@gmail.com
 """
@@ -25,6 +25,21 @@ def custom():
     return b
 
 # ----------------------------------------------------------------------------------------------
+# Inhibitory connections
+# ----------------------------------------------------------------------------------------------
+def inhib():
+    params = specs.ODict()
+    
+    params[('IEGain')] = [0.5, 0.75, 1.0, 1.25, 1.5]
+    params[('IIGain')] = [0.5, 0.75, 1.0, 1.25, 1.5]
+    params[('seeds', 'conn')] =  [0, 1, 2, 3, 4]
+    params[('seeds', 'conn')] =  [0, 1, 2, 3, 4]
+
+    b = Batch(params=params, netParamsFile='netParams.py', cfgFile='cfg.py')
+
+    return b
+    
+# ----------------------------------------------------------------------------------------------
 # Run configurations
 # ----------------------------------------------------------------------------------------------
 def setRunCfg(b, type='mpi_bulletin'):
@@ -35,14 +50,14 @@ def setRunCfg(b, type='mpi_bulletin'):
 
     elif type=='mpi_direct':
         b.runCfg = {'type': 'mpi_direct',
-            'cores': 12,
+            'cores': 64,
             'script': 'init.py',
             'mpiCommand': 'mpiexec', # --use-hwthread-cpus
             'skip': True}
 
     elif type=='mpi_direct2':
         b.runCfg = {'type': 'mpi_direct',
-            'mpiCommand': 'mpirun -n 80 ./x86_64/special -mpi -python init.py', # --use-hwthread-cpus
+            'mpiCommand': 'mpirun -n 80 ./x86_64/special -mpi -python init.py', 
             'skip': True}
 
     elif type=='hpc_slurm_gcp':
@@ -63,8 +78,8 @@ def setRunCfg(b, type='mpi_bulletin'):
 if __name__ == '__main__': 
     b = custom() #
 
-    b.batchLabel = 'v100_batch1'  
+    b.batchLabel = 'v7_batch1'  
     b.saveFolder = '../data/'+b.batchLabel
     b.method = 'grid'
-    setRunCfg(b, 'mpi_direct')
+    setRunCfg(b, 'mpi_direct2')
     b.run() # run batch
