@@ -127,48 +127,6 @@ for metype in cellsVSName.keys(): # metype
 #------------------------------------------------------------------------------
 # Cell parameters  # L1 70  L23 215  L4 230 L5 260  L6 260  = 1035
 #------------------------------------------------------------------------------
-if not cfg.loadcellsfromJSON:     ## Load cell rules using BBP template
-    
-    def loadTemplateName(cellMe):     
-        outFolder = cfg.rootFolder+'/cell_data/'+cellMe
-        try:
-            f = open(outFolder+'/template.hoc', 'r')
-            for line in f.readlines():
-                if 'begintemplate' in line:
-                    return str(line)[14:-1]     
-        except:
-            print('Cannot read cell template from %s' % (outFolder))
-            return False
-
-    cellnumber = 0    
-    for cellName in cfg.S1cells:
-
-        if cfg.Nmorpho[cellName] < 5:
-            morphoNumbers = cfg.Nmorpho[cellName]
-        else:
-            morphoNumbers = 5
-
-        for morphoNumber in range(morphoNumbers):
-            cellMe = cfg.cellLabel[cellName] + '_' + str(morphoNumber+1)
-            print(cellMe,cellName)
-
-            cellTemplateName = loadTemplateName(cellMe)
-
-            if cellTemplateName:
-
-                cellRule = netParams.importCellParams(label=cellMe, somaAtOrigin=True,
-                    conds={'cellType': cellMe, 'cellModel': 'HH_full'},
-                    fileName='cellwrapper.py',
-                    cellName='loadCell',
-                    cellInstance = True,
-                    cellArgs={'cellName': cellMe, 'cellTemplateName': cellTemplateName})
-
-                netParams.renameCellParamsSec(label=cellMe, oldSec='soma_0', newSec='soma')              
-                for secname2 in netParams.cellParams[cellMe]['secLists'].keys():
-                 if 'soma_0' in netParams.cellParams[cellMe]['secLists'][secname2]:
-                   print(cellMe,secname2,netParams.cellParams[cellMe]['secLists'][secname2][0])
-                   netParams.cellParams[cellMe]['secLists'][secname2][0] = 'soma'    
-
 ## S1 cell property rules
 for cellName in cfg.S1cells:
     
@@ -183,24 +141,10 @@ for cellName in cfg.S1cells:
 
         cellMe = cfg.cellLabel[cellName] + '_' + str(morphoNumber+1)
         
-        if cfg.loadcellsfromJSON:
-            # Load cell rules previously saved using netpyne format
-            netParams.loadCellParamsRule(label = cellMe, fileName = 'cell_data/' + cellMe + '/' + cellMe + '_cellParams.json')        
-            netParams.cellParams[cellMe]['diversityFraction'] = cellFraction   
-        else:
-            cellRule = {'conds': {'cellType': cellName}, 'diversityFraction': cellFraction, 'secs': {}}  # cell rule dict
-            cellRule['secs'] = netParams.cellParams[cellMe]['secs']     
-            cellRule['conds'] = netParams.cellParams[cellMe]['conds']    
-            cellRule['conds']['cellType'] = cellName
-            cellRule['globals'] = netParams.cellParams[cellMe]['globals']       
-            cellRule['secLists'] = netParams.cellParams[cellMe]['secLists']      
-            cellRule['secLists']['spiny'] = {}
-            cellRule['secLists']['spinyEE'] = {}
-            nonSpiny = ['axon_0', 'axon_1']
-            cellRule['secLists']['spiny'] = [sec for sec in cellRule['secLists']['all'] if sec not in nonSpiny]
-            nonSpinyEE = ['axon_0', 'axon_1', 'soma']
-            cellRule['secLists']['spinyEE'] = [sec for sec in cellRule['secLists']['all'] if sec not in nonSpinyEE]
-            netParams.cellParams[cellMe] = cellRule   # add dict to list of cell params  
+        # Load cell rules previously saved using netpyne format  
+        netParams.loadCellParamsRule(label = cellMe, fileName = 'cells/' + cellMe + '_cellParams.json')   
+ 
+        netParams.cellParams[cellMe]['diversityFraction'] = cellFraction   
 
         #-----------------------------------------------------------------------------------#
         if cfg.reducedtest:
@@ -738,7 +682,7 @@ if cfg.addStimSynS1:
 if cfg.connect_ThVecStim_S1:
 
     # mtype VPM_sTC POm_sTC_s1 nameref
-    with open('../info/anatomy/convergence_Th_S1.txt') as mtype_file:
+    with open('conn/convergence_Th_S1.txt') as mtype_file:
         mtype_content = mtype_file.read()       
 
     convergence_Th_S1 = {}
@@ -795,4 +739,5 @@ netParams.description = """
 - v8 - calculate LFPs -> only in branch "LFP"
 - v9 - STP stoch
 - v10 - in vivo like conditions with axon pt3d positions fixed
+- v100 - in vivo like conditions with axon pt3d positions fixed LFP
 """

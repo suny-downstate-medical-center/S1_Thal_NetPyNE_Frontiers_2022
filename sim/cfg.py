@@ -67,7 +67,7 @@ cfg.reducedtest = False
 # Load 207 Morpho-electrical Names used to import the cells from 'cell_data/' -> L1:14 L23:43 L4:46 L5:52 L6:52
 # Create [Morphological,Electrical] = number of cell metype in the sub-pop
 
-with open('../info/anatomy/S1-cells-distributions-Rat.txt') as mtype_file:
+with open('cells/S1-cells-distributions-Rat.txt') as mtype_file:
     mtype_content = mtype_file.read()       
 
 cfg.popNumber = {}
@@ -223,7 +223,7 @@ cfg.recordStep = 0.5
 # cfg.recordLFP = [[200, 1100, 200], [220, 1100, 200], [200, 1200, 220], [220, 1200, 220]]
 # cfg.saveLFPPops =  cfg.recordCells 
 
-cfg.recordLFP = [[0, y, 0] for y in [1000, 2000]] # 1 elec in L1 and 3 elec in L5  
+cfg.recordLFP = [[0, y, 0] for y in [500, 1000, 1500, 2000]] # 1 elec in L1 and 3 elec in L5  
 
 # cfg.saveDipolePops = cfg.S1cells
 
