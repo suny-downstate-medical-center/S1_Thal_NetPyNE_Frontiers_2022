@@ -27,7 +27,7 @@ cfg.coreneuron = False
 #------------------------------------------------------------------------------
 cfg.duration = 1.5*1e4 ## Duration of the sim, in ms  
 cfg.dt = 0.05
-cfg.seeds = {'conn': 4322, 'stim': 4322, 'loc': 4322} 
+cfg.seeds = {'conn': 4322, 'stim': 1001, 'loc': 4322} 
 cfg.hParams = {'celsius': 34, 'v_init': -69.5}  
 cfg.verbose = False
 cfg.createNEURONObj = True
@@ -223,7 +223,7 @@ cfg.recordStep = 0.5
 # cfg.recordLFP = [[200, 1100, 200], [220, 1100, 200], [200, 1200, 220], [220, 1200, 220]]
 # cfg.saveLFPPops =  cfg.recordCells 
 
-cfg.recordLFP = [[0, y, 0] for y in [1000, 2000]] # 1 elec in L1 and 3 elec in L5  
+cfg.recordLFP = [[0, y, 0] for y in [500, 1000, 1500, 2000]] # 1 elec in L1 and 3 elec in L5  
 
 # cfg.saveDipolePops = cfg.S1cells
 
@@ -233,7 +233,7 @@ if cfg.recordDipole: cfg.saveDipoleCells = cfg.S1cells
 #------------------------------------------------------------------------------
 # Saving
 #------------------------------------------------------------------------------
-cfg.simLabel = 'v100_batch2'       #   + str(cfg.cynradNumber)
+cfg.simLabel = 'v100_batch9'       #   + str(cfg.cynradNumber)
 cfg.saveFolder = '../data/'+cfg.simLabel
 # cfg.filename =                	## Set file output name
 cfg.savePickle = True	        	## Save pkl file
