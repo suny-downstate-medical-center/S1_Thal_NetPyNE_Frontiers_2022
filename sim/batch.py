@@ -15,7 +15,7 @@ import numpy as np
 def custom():
     params = specs.ODict()
     
-    params[('seeds', 'stim')] =  [1020, 1021, 1022, 1023, 1024]
+    params[('seeds', 'stim')] =  [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009]
 
     # params[('fracmorphoradius')] = [1.0/2.0]
 
@@ -62,7 +62,7 @@ def setRunCfg(b, type='mpi_bulletin'):
 if __name__ == '__main__': 
     b = custom() #
 
-    b.batchLabel = 'v101_batch3'  
+    b.batchLabel = 'v102_batch1'  
     b.saveFolder = '../data/'+b.batchLabel
     b.method = 'grid'
     setRunCfg(b, 'mpi_direct')

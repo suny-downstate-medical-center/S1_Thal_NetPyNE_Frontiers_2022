@@ -1,7 +1,7 @@
 """
 batch.py 
 
-Batch simulation for S1-thalamus model using NetPyNE
+Batch simulation for S1 model using NetPyNE
 
 Contributors: salvadordura@gmail.com, fernandodasilvaborges@gmail.com
 """
@@ -15,30 +15,14 @@ import numpy as np
 def custom():
     params = specs.ODict()
     
-    # params[('seeds', 'conn')] =  [1234]
+    params[('seeds', 'stim')] =  [1020, 1021, 1022, 1023, 1024]
 
-    params[('rateStimI')] = [9.0]
-    params[('rateStimE')] = [9.0]
-
-    b = Batch(params=params, netParamsFile='netParams.py', cfgFile='cfg.py')
-
-    return b
-
-# ----------------------------------------------------------------------------------------------
-# Inhibitory connections
-# ----------------------------------------------------------------------------------------------
-def inhib():
-    params = specs.ODict()
-    
-    params[('IEGain')] = [0.5, 0.75, 1.0, 1.25, 1.5]
-    params[('IIGain')] = [0.5, 0.75, 1.0, 1.25, 1.5]
-    params[('seeds', 'conn')] =  [0, 1, 2, 3, 4]
-    params[('seeds', 'conn')] =  [0, 1, 2, 3, 4]
+    # params[('fracmorphoradius')] = [1.0/2.0]
 
     b = Batch(params=params, netParamsFile='netParams.py', cfgFile='cfg.py')
 
     return b
-    
+
 # ----------------------------------------------------------------------------------------------
 # Run configurations
 # ----------------------------------------------------------------------------------------------
@@ -50,14 +34,14 @@ def setRunCfg(b, type='mpi_bulletin'):
 
     elif type=='mpi_direct':
         b.runCfg = {'type': 'mpi_direct',
-            'cores': 64,
+            'cores': 2,
             'script': 'init.py',
             'mpiCommand': 'mpiexec', # --use-hwthread-cpus
             'skip': True}
 
     elif type=='mpi_direct2':
         b.runCfg = {'type': 'mpi_direct',
-            'mpiCommand': 'mpirun -n 80 ./x86_64/special -mpi -python init.py', 
+            'mpiCommand': 'mpirun -n 80 ./x86_64/special -mpi -python init.py', # --use-hwthread-cpus
             'skip': True}
 
     elif type=='hpc_slurm_gcp':
@@ -78,8 +62,8 @@ def setRunCfg(b, type='mpi_bulletin'):
 if __name__ == '__main__': 
     b = custom() #
 
-    b.batchLabel = 'v7_batch1'  
+    b.batchLabel = 'v101_batch3'  
     b.saveFolder = '../data/'+b.batchLabel
     b.method = 'grid'
-    setRunCfg(b, 'mpi_direct2')
+    setRunCfg(b, 'mpi_direct')
     b.run() # run batch
