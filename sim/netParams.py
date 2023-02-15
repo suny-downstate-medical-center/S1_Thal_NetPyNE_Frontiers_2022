@@ -197,6 +197,14 @@ for cellName in cfg.S1cells:
                 netParams.cellParams[cellMe]['secs'][section]['geom']['pt3d'][ipt] = (x * c - z * s, y, x * s + z * c, d)
 
 #------------------------------------------------------------------------------
+#  extracellular mechs
+#------------------------------------------------------------------------------
+for celltyp in netParams.cellParams.keys():
+    label = []
+    for secname in netParams.cellParams[celltyp]['secs'].keys():
+        netParams.cellParams[celltyp]['secs'][secname]['mechs']['extracellular'] = {}
+
+#------------------------------------------------------------------------------
 # load data from S1 conn pre-processing file 
 #------------------------------------------------------------------------------
 with open('conn/conn.pkl', 'rb') as fileObj: connData = pickle.load(fileObj)

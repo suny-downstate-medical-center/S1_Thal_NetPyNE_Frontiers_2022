@@ -15,7 +15,7 @@ import numpy as np
 def custom():
     params = specs.ODict()
     
-    params[('seeds', 'stim')] =  [1020, 1021, 1022, 1023, 1024]
+    params[('seeds', 'stim')] =  [1000]
 
     # params[('fracmorphoradius')] = [1.0/2.0]
 
@@ -34,7 +34,7 @@ def setRunCfg(b, type='mpi_bulletin'):
 
     elif type=='mpi_direct':
         b.runCfg = {'type': 'mpi_direct',
-            'cores': 2,
+            'cores': 10,
             'script': 'init.py',
             'mpiCommand': 'mpiexec', # --use-hwthread-cpus
             'skip': True}
@@ -62,7 +62,7 @@ def setRunCfg(b, type='mpi_bulletin'):
 if __name__ == '__main__': 
     b = custom() #
 
-    b.batchLabel = 'v104_batch3'  
+    b.batchLabel = 'v200_batch1'  
     b.saveFolder = '../data/'+b.batchLabel
     b.method = 'grid'
     setRunCfg(b, 'mpi_direct')
