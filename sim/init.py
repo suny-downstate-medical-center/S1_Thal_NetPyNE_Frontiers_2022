@@ -67,8 +67,8 @@ sim.net.defineCellShapes()
 # The parameters of the extracellular point current source
 acs_params = {'position': [210.0, 0.0, 210.0],  # um
               'amp': 20.,  # uA,
-              'stimstart': 2000,  # ms
-              'stimend': 3000,  # ms
+              'stimstart': 1000,  # ms
+              'stimend': 1500,  # ms
               'frequency': 10,  # Hz
               'sigma': 0.57  # decay constant S/m
               }

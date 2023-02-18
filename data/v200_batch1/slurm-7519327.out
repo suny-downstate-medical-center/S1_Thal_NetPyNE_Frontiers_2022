@@ -1,0 +1,1208 @@
+numprocs=96
+NEURON -- VERSION 8.2.dev-25-g548348a2+ master (548348a2+) 2022-04-21
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2021
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod//ar_traub.mod" "mod//cadad.mod" "mod//CaDynamics_E2.mod" "mod//cadyn.mod" "mod//cagk.mod" "mod//Ca_HVA.mod" "mod//cal_mh.mod" "mod//cal_mig.mod" "mod//Ca_LVAst.mod" "mod//Ca.mod" "mod//cancr.mod" "mod//canin.mod" "mod//can_mig.mod" "mod//catcb.mod" "mod//cat_mig.mod" "mod//cat_traub.mod" "mod//ch_CavL.mod" "mod//ch_CavN.mod" "mod//ch_KCaS.mod" "mod//ch_Kdrfastngf.mod" "mod//ch_KvAngf.mod" "mod//ch_KvCaB.mod" "mod//ch_leak.mod" "mod//ch_Navngf.mod" "mod//DetAMPANMDA.mod" "mod//DetGABAAB.mod" "mod//gabab.mod" "mod//h_BS.mod" "mod//HCN1.mod" "mod//HH2.mod" "mod//h_harnett.mod" "mod//hin.mod" "mod//h_kole.mod" "mod//h_migliore.mod" "mod//htc.mod" "mod//ican_sidi.mod" "mod//iccr.mod" "mod//IC.mod" "mod//iconc_Ca.mod" "mod//Ih.mod" "mod//ikscr.mod" "mod//IKsin.mod" "mod//Im.mod" "mod//IT2.mod" "mod//IT.mod" "mod//kap_BS.mod" "mod//kapcb.mod" "mod//kapin.mod" "mod//kBK.mod" "mod//kca.mod" "mod//kctin.mod" "mod//kdmc_BS.mod" "mod//kdr_BS.mod" "mod//kdrcr.mod" "mod//kdrin.mod" "mod//KdShu2007.mod" "mod//kl.mod" "mod//km.mod" "mod//K_Pst.mod" "mod//K_Tst.mod" "mod//kv.mod" "mod//MyExp2SynBB.mod" "mod//my_exp2syn.mod" "mod//MyExp2SynNMDABB.mod" "mod//nafcr.mod" "mod//nafx.mod" "mod//Nap_Et2.mod" "mod//nap_sidi.mod" "mod//NaTa_t.mod" "mod//NaTs2_t.mod" "mod//nax_BS.mod" "mod//naz.mod" "mod//Nca.mod" "mod//ProbAMPANMDA_EMS.mod" "mod//ProbGABAAB_EMS.mod" "mod//savedist.mod" "mod//SK_E2.mod" "mod//SKv3_1.mod" "mod//StochKv_deterministic.mod" "mod//StochKv.mod" "mod//tia.mod" "mod//vecstim.mod"
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 15: 403 
+  Number of connections on node 15: 30480 
+  Number of synaptic contacts on node 15: 164847 
+  Number of stims on node 15: 890 
+Recording 2 traces of 1 types on node 15
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 51: 402 
+  Number of connections on node 51: 28798 
+  Number of synaptic contacts on node 51: 151764 
+  Number of stims on node 51: 790 
+Recording 1 traces of 1 types on node 51
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 39: 402 
+  Number of connections on node 39: 28381 
+  Number of synaptic contacts on node 39: 151888 
+  Number of stims on node 39: 790 
+Recording 2 traces of 1 types on node 39
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 60: 402 
+  Number of connections on node 60: 29431 
+  Number of synaptic contacts on node 60: 155169 
+  Number of stims on node 60: 790 
+Recording 1 traces of 1 types on node 60
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 1: 403 
+  Number of connections on node 1: 30388 
+  Number of synaptic contacts on node 1: 162663 
+  Number of stims on node 1: 840 
+Recording 1 traces of 1 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 73: 402 
+  Number of connections on node 73: 30192 
+  Number of synaptic contacts on node 73: 160267 
+  Number of stims on node 73: 790 
+Recording 0 traces of 0 types on node 73
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 7: 403 
+  Number of connections on node 7: 30494 
+  Number of synaptic contacts on node 7: 165365 
+  Number of stims on node 7: 870 
+Recording 2 traces of 1 types on node 7
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 86: 402 
+  Number of connections on node 86: 29536 
+  Number of synaptic contacts on node 86: 157616 
+  Number of stims on node 86: 810 
+Recording 5 traces of 1 types on node 86
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 8: 403 
+  Number of connections on node 8: 30783 
+  Number of synaptic contacts on node 8: 165856 
+  Number of stims on node 8: 860 
+Recording 1 traces of 1 types on node 8
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 50: 402 
+  Number of connections on node 50: 29634 
+  Number of synaptic contacts on node 50: 156922 
+  Number of stims on node 50: 810 
+Recording 3 traces of 1 types on node 50
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 9: 403 
+  Number of connections on node 9: 30052 
+  Number of synaptic contacts on node 9: 160242 
+  Number of stims on node 9: 830 
+Recording 1 traces of 1 types on node 9
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 53: 402 
+  Number of connections on node 53: 28917 
+  Number of synaptic contacts on node 53: 152033 
+  Number of stims on node 53: 800 
+Recording 3 traces of 1 types on node 53
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 11: 403 
+  Number of connections on node 11: 29716 
+  Number of synaptic contacts on node 11: 158195 
+  Number of stims on node 11: 810 
+Recording 1 traces of 1 types on node 11
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 57: 402 
+  Number of connections on node 57: 28536 
+  Number of synaptic contacts on node 57: 150942 
+  Number of stims on node 57: 800 
+Recording 1 traces of 1 types on node 57
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 12: 403 
+  Number of connections on node 12: 30412 
+  Number of synaptic contacts on node 12: 163561 
+  Number of stims on node 12: 830 
+Recording 3 traces of 1 types on node 12
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 58: 402 
+  Number of connections on node 58: 28930 
+  Number of synaptic contacts on node 58: 151610 
+  Number of stims on node 58: 820 
+Recording 2 traces of 1 types on node 58
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 13: 403 
+  Number of connections on node 13: 30482 
+  Number of synaptic contacts on node 13: 165558 
+  Number of stims on node 13: 870 
+Recording 4 traces of 1 types on node 13
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 59: 402 
+  Number of connections on node 59: 28443 
+  Number of synaptic contacts on node 59: 148071 
+  Number of stims on node 59: 790 
+Recording 1 traces of 1 types on node 59
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 17: 403 
+  Number of connections on node 17: 30870 
+  Number of synaptic contacts on node 17: 165634 
+  Number of stims on node 17: 870 
+Recording 1 traces of 1 types on node 17
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 61: 402 
+  Number of connections on node 61: 29327 
+  Number of synaptic contacts on node 61: 153806 
+  Number of stims on node 61: 790 
+Recording 1 traces of 1 types on node 61
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 19: 403 
+  Number of connections on node 19: 31324 
+  Number of synaptic contacts on node 19: 169056 
+  Number of stims on node 19: 910 
+Recording 3 traces of 1 types on node 19
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 62: 402 
+  Number of connections on node 62: 29179 
+  Number of synaptic contacts on node 62: 153947 
+  Number of stims on node 62: 790 
+Recording 2 traces of 1 types on node 62
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 21: 402 
+  Number of connections on node 21: 30894 
+  Number of synaptic contacts on node 21: 165652 
+  Number of stims on node 21: 890 
+Recording 1 traces of 1 types on node 21
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 63: 402 
+  Number of connections on node 63: 30213 
+  Number of synaptic contacts on node 63: 160362 
+  Number of stims on node 63: 800 
+Recording 2 traces of 1 types on node 63
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 22: 402 
+  Number of connections on node 22: 29763 
+  Number of synaptic contacts on node 22: 158630 
+  Number of stims on node 22: 860 
+Recording 0 traces of 0 types on node 22
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 64: 402 
+  Number of connections on node 64: 29601 
+  Number of synaptic contacts on node 64: 155506 
+  Number of stims on node 64: 790 
+Recording 1 traces of 1 types on node 64
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 23: 402 
+  Number of connections on node 23: 30431 
+  Number of synaptic contacts on node 23: 162463 
+  Number of stims on node 23: 840 
+Recording 1 traces of 1 types on node 23
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 65: 402 
+  Number of connections on node 65: 30025 
+  Number of synaptic contacts on node 65: 158545 
+  Number of stims on node 65: 790 
+Recording 1 traces of 1 types on node 65
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 25: 402 
+  Number of connections on node 25: 29352 
+  Number of synaptic contacts on node 25: 157143 
+  Number of stims on node 25: 790 
+Recording 1 traces of 1 types on node 25
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 66: 402 
+  Number of connections on node 66: 30015 
+  Number of synaptic contacts on node 66: 159196 
+  Number of stims on node 66: 790 
+Recording 2 traces of 1 types on node 66
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 27: 402 
+  Number of connections on node 27: 29324 
+  Number of synaptic contacts on node 27: 156348 
+  Number of stims on node 27: 780 
+Recording 2 traces of 1 types on node 27
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 68: 402 
+  Number of connections on node 68: 29710 
+  Number of synaptic contacts on node 68: 157610 
+  Number of stims on node 68: 780 
+Recording 2 traces of 1 types on node 68
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 30: 402 
+  Number of connections on node 30: 28224 
+  Number of synaptic contacts on node 30: 150924 
+  Number of stims on node 30: 780 
+Recording 5 traces of 1 types on node 30
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 69: 402 
+  Number of connections on node 69: 30122 
+  Number of synaptic contacts on node 69: 160395 
+  Number of stims on node 69: 820 
+Recording 4 traces of 1 types on node 69
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 31: 402 
+  Number of connections on node 31: 28601 
+  Number of synaptic contacts on node 31: 152433 
+  Number of stims on node 31: 800 
+Recording 2 traces of 1 types on node 31
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 70: 402 
+  Number of connections on node 70: 30085 
+  Number of synaptic contacts on node 70: 157983 
+  Number of stims on node 70: 800 
+Recording 1 traces of 1 types on node 70
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 33: 402 
+  Number of connections on node 33: 28450 
+  Number of synaptic contacts on node 33: 154755 
+  Number of stims on node 33: 800 
+Recording 1 traces of 1 types on node 33
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 71: 402 
+  Number of connections on node 71: 29929 
+  Number of synaptic contacts on node 71: 159515 
+  Number of stims on node 71: 820 
+Recording 4 traces of 1 types on node 71
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 38: 402 
+  Number of connections on node 38: 27981 
+  Number of synaptic contacts on node 38: 150363 
+  Number of stims on node 38: 780 
+Recording 1 traces of 1 types on node 38
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 72: 402 
+  Number of connections on node 72: 29976 
+  Number of synaptic contacts on node 72: 158248 
+  Number of stims on node 72: 790 
+Recording 2 traces of 1 types on node 72
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 45: 402 
+  Number of connections on node 45: 28490 
+  Number of synaptic contacts on node 45: 152896 
+  Number of stims on node 45: 810 
+Recording 4 traces of 1 types on node 45
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 74: 402 
+  Number of connections on node 74: 29667 
+  Number of synaptic contacts on node 74: 156414 
+  Number of stims on node 74: 770 
+Recording 0 traces of 0 types on node 74
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 47: 402 
+  Number of connections on node 47: 29413 
+  Number of synaptic contacts on node 47: 156576 
+  Number of stims on node 47: 810 
+Recording 0 traces of 0 types on node 47
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 75: 402 
+  Number of connections on node 75: 30302 
+  Number of synaptic contacts on node 75: 160113 
+  Number of stims on node 75: 780 
+Recording 2 traces of 1 types on node 75
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 2: 403 
+  Number of connections on node 2: 30289 
+  Number of synaptic contacts on node 2: 162002 
+  Number of stims on node 2: 840 
+Recording 1 traces of 1 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 76: 402 
+  Number of connections on node 76: 29069 
+  Number of synaptic contacts on node 76: 152270 
+  Number of stims on node 76: 770 
+Recording 1 traces of 1 types on node 76
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 3: 403 
+  Number of connections on node 3: 30653 
+  Number of synaptic contacts on node 3: 164062 
+  Number of stims on node 3: 840 
+Recording 3 traces of 1 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 78: 402 
+  Number of connections on node 78: 29217 
+  Number of synaptic contacts on node 78: 152643 
+  Number of stims on node 78: 790 
+Recording 3 traces of 1 types on node 78
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 4: 403 
+  Number of connections on node 4: 30993 
+  Number of synaptic contacts on node 4: 166755 
+  Number of stims on node 4: 870 
+Recording 4 traces of 1 types on node 4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 80: 402 
+  Number of connections on node 80: 29210 
+  Number of synaptic contacts on node 80: 152686 
+  Number of stims on node 80: 780 
+Recording 1 traces of 1 types on node 80
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 5: 403 
+  Number of connections on node 5: 30407 
+  Number of synaptic contacts on node 5: 164095 
+  Number of stims on node 5: 860 
+Recording 1 traces of 1 types on node 5
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 81: 402 
+  Number of connections on node 81: 28877 
+  Number of synaptic contacts on node 81: 150070 
+  Number of stims on node 81: 760 
+Recording 0 traces of 0 types on node 81
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 6: 403 
+  Number of connections on node 6: 30554 
+  Number of synaptic contacts on node 6: 164404 
+  Number of stims on node 6: 860 
+Recording 2 traces of 1 types on node 6
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 82: 402 
+  Number of connections on node 82: 28952 
+  Number of synaptic contacts on node 82: 151595 
+  Number of stims on node 82: 770 
+Recording 1 traces of 1 types on node 82
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 10: 403 
+  Number of connections on node 10: 29863 
+  Number of synaptic contacts on node 10: 159430 
+  Number of stims on node 10: 820 
+Recording 2 traces of 1 types on node 10
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 83: 402 
+  Number of connections on node 83: 28800 
+  Number of synaptic contacts on node 83: 152159 
+  Number of stims on node 83: 780 
+Recording 2 traces of 1 types on node 83
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 14: 403 
+  Number of connections on node 14: 30403 
+  Number of synaptic contacts on node 14: 165558 
+  Number of stims on node 14: 880 
+Recording 3 traces of 1 types on node 14
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 89: 402 
+  Number of connections on node 89: 29471 
+  Number of synaptic contacts on node 89: 156600 
+  Number of stims on node 89: 780 
+Recording 2 traces of 1 types on node 89
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 16: 403 
+  Number of connections on node 16: 31172 
+  Number of synaptic contacts on node 16: 167752 
+  Number of stims on node 16: 900 
+Recording 4 traces of 1 types on node 16
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 90: 402 
+  Number of connections on node 90: 29523 
+  Number of synaptic contacts on node 90: 156918 
+  Number of stims on node 90: 790 
+Recording 1 traces of 1 types on node 90
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 18: 403 
+  Number of connections on node 18: 31695 
+  Number of synaptic contacts on node 18: 170259 
+  Number of stims on node 18: 900 
+Recording 5 traces of 1 types on node 18
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 91: 402 
+  Number of connections on node 91: 29907 
+  Number of synaptic contacts on node 91: 158786 
+  Number of stims on node 91: 800 
+Recording 2 traces of 1 types on node 91
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 20: 402 
+  Number of connections on node 20: 31578 
+  Number of synaptic contacts on node 20: 170521 
+  Number of stims on node 20: 920 
+Recording 3 traces of 1 types on node 20
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 92: 402 
+  Number of connections on node 92: 30065 
+  Number of synaptic contacts on node 92: 160974 
+  Number of stims on node 92: 810 
+Recording 3 traces of 1 types on node 92
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 24: 402 
+  Number of connections on node 24: 29713 
+  Number of synaptic contacts on node 24: 157923 
+  Number of stims on node 24: 820 
+Recording 1 traces of 1 types on node 24
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 93: 402 
+  Number of connections on node 93: 30162 
+  Number of synaptic contacts on node 93: 160296 
+  Number of stims on node 93: 830 
+Recording 3 traces of 1 types on node 93
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 26: 402 
+  Number of connections on node 26: 29231 
+  Number of synaptic contacts on node 26: 156060 
+  Number of stims on node 26: 770 
+Recording 0 traces of 0 types on node 26
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 94: 402 
+  Number of connections on node 94: 30047 
+  Number of synaptic contacts on node 94: 160478 
+  Number of stims on node 94: 830 
+Recording 2 traces of 1 types on node 94
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 28: 402 
+  Number of connections on node 28: 28282 
+  Number of synaptic contacts on node 28: 150314 
+  Number of stims on node 28: 760 
+Recording 0 traces of 0 types on node 28
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 48: 402 
+  Number of connections on node 48: 28893 
+  Number of synaptic contacts on node 48: 153817 
+  Number of stims on node 48: 800 
+Recording 0 traces of 0 types on node 48
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 29: 402 
+  Number of connections on node 29: 28420 
+  Number of synaptic contacts on node 29: 150635 
+  Number of stims on node 29: 750 
+Recording 0 traces of 0 types on node 29
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 49: 402 
+  Number of connections on node 49: 28940 
+  Number of synaptic contacts on node 49: 153710 
+  Number of stims on node 49: 780 
+Recording 2 traces of 1 types on node 49
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 32: 402 
+  Number of connections on node 32: 28273 
+  Number of synaptic contacts on node 32: 153121 
+  Number of stims on node 32: 800 
+Recording 3 traces of 1 types on node 32
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 52: 402 
+  Number of connections on node 52: 29231 
+  Number of synaptic contacts on node 52: 155361 
+  Number of stims on node 52: 790 
+Recording 1 traces of 1 types on node 52
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 34: 402 
+  Number of connections on node 34: 28022 
+  Number of synaptic contacts on node 34: 153431 
+  Number of stims on node 34: 800 
+Recording 2 traces of 1 types on node 34
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 54: 402 
+  Number of connections on node 54: 28658 
+  Number of synaptic contacts on node 54: 150130 
+  Number of stims on node 54: 790 
+Recording 1 traces of 1 types on node 54
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 35: 402 
+  Number of connections on node 35: 27860 
+  Number of synaptic contacts on node 35: 149305 
+  Number of stims on node 35: 780 
+Recording 1 traces of 1 types on node 35
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 55: 402 
+  Number of connections on node 55: 28862 
+  Number of synaptic contacts on node 55: 149916 
+  Number of stims on node 55: 810 
+Recording 3 traces of 1 types on node 55
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 36: 402 
+  Number of connections on node 36: 27614 
+  Number of synaptic contacts on node 36: 148293 
+  Number of stims on node 36: 780 
+Recording 3 traces of 1 types on node 36
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 37: 402 
+  Number of connections on node 37: 28276 
+  Number of synaptic contacts on node 37: 151926 
+  Number of stims on node 37: 790 
+Recording 2 traces of 1 types on node 37
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 40: 402 
+  Number of connections on node 40: 28590 
+  Number of synaptic contacts on node 40: 154446 
+  Number of stims on node 40: 810 
+Recording 3 traces of 1 types on node 40
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 41: 402 
+  Number of connections on node 41: 28417 
+  Number of synaptic contacts on node 41: 150224 
+  Number of stims on node 41: 770 
+Recording 1 traces of 1 types on node 41
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 42: 402 
+  Number of connections on node 42: 28329 
+  Number of synaptic contacts on node 42: 149963 
+  Number of stims on node 42: 770 
+Recording 3 traces of 1 types on node 42
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 43: 402 
+  Number of connections on node 43: 29231 
+  Number of synaptic contacts on node 43: 154652 
+  Number of stims on node 43: 800 
+Recording 3 traces of 1 types on node 43
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 44: 402 
+  Number of connections on node 44: 28939 
+  Number of synaptic contacts on node 44: 153597 
+  Number of stims on node 44: 800 
+Recording 1 traces of 1 types on node 44
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 46: 402 
+  Number of connections on node 46: 29275 
+  Number of synaptic contacts on node 46: 155342 
+  Number of stims on node 46: 810 
+Recording 2 traces of 1 types on node 46
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 56: 402 
+  Number of connections on node 56: 29096 
+  Number of synaptic contacts on node 56: 153449 
+  Number of stims on node 56: 810 
+Recording 2 traces of 1 types on node 56
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 67: 402 
+  Number of connections on node 67: 29156 
+  Number of synaptic contacts on node 67: 153139 
+  Number of stims on node 67: 770 
+Recording 1 traces of 1 types on node 67
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 77: 402 
+  Number of connections on node 77: 29329 
+  Number of synaptic contacts on node 77: 153408 
+  Number of stims on node 77: 790 
+Recording 2 traces of 1 types on node 77
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 79: 402 
+  Number of connections on node 79: 29509 
+  Number of synaptic contacts on node 79: 155150 
+  Number of stims on node 79: 790 
+Recording 0 traces of 0 types on node 79
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 84: 402 
+  Number of connections on node 84: 28853 
+  Number of synaptic contacts on node 84: 153532 
+  Number of stims on node 84: 780 
+Recording 2 traces of 1 types on node 84
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 85: 402 
+  Number of connections on node 85: 29584 
+  Number of synaptic contacts on node 85: 157381 
+  Number of stims on node 85: 800 
+Recording 2 traces of 1 types on node 85
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 87: 402 
+  Number of connections on node 87: 29145 
+  Number of synaptic contacts on node 87: 155833 
+  Number of stims on node 87: 800 
+Recording 0 traces of 0 types on node 87
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 95: 402 
+  Number of connections on node 95: 29895 
+  Number of synaptic contacts on node 95: 159015 
+  Number of stims on node 95: 810 
+Recording 1 traces of 1 types on node 95
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+  Number of cells on node 88: 402 
+  Number of connections on node 88: 29341 
+  Number of synaptic contacts on node 88: 156946 
+  Number of stims on node 88: 800 
+Recording 2 traces of 1 types on node 88
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+radius from 0.0 to 105.0 micrometers
+
+Start time:  2023-02-15 20:51:39.459245
+
+Creating network of 386 cell populations on 96 hosts...
+  Number of cells on node 0: 403 
+  Done; cell creation time = 8.63 s.
+Making connections...
+  Number of connections on node 0: 29856 
+  Number of synaptic contacts on node 0: 158583 
+  Done; cell connection time = 3833.49 s.
+Adding stims...
+  Number of stims on node 0: 830 
+  Done; cell stims creation time = 9.85 s.
+Recording 3 traces of 1 types on node 0
+0.0s
+
+Running simulation using NEURON for 400.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+  Done; run time = 2345.61 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 5.40 s.
+
+Analyzing...
+  Cells: 38612
+  Connections: 0 (0.00 per cell)
+  Spikes: 66504 (4.31 Hz)
+  Simulated time: 0.4 s; 96 workers
+  Run time: 2345.61 s
+   L1_DAC_bNA : 0.000 Hz
+   presyn_L1_DAC_bNA : 0.000 Hz
+   L1_DAC_cNA : 0.000 Hz
+   presyn_L1_DAC_cNA : 0.000 Hz
+   L1_DLAC_cNA : 0.000 Hz
+   presyn_L1_DLAC_cNA : 0.000 Hz
+   L1_HAC_bNA : 0.000 Hz
+   presyn_L1_HAC_bNA : 0.000 Hz
+   L1_HAC_cIR : 0.000 Hz
+   presyn_L1_HAC_cIR : 0.000 Hz
+   L1_HAC_cNA : 0.000 Hz
+   presyn_L1_HAC_cNA : 0.000 Hz
+   L1_NGC-DA_bNA : 0.000 Hz
+   presyn_L1_NGC-DA_bNA : 0.000 Hz
+   L1_NGC-DA_cAC : 0.000 Hz
+   presyn_L1_NGC-DA_cAC : 0.000 Hz
+   L1_NGC-DA_cNA : 0.000 Hz
+   presyn_L1_NGC-DA_cNA : 0.000 Hz
+   L1_NGC-DA_cST : 0.000 Hz
+   presyn_L1_NGC-DA_cST : 0.000 Hz
+   L1_NGC-SA_cNA : 0.167 Hz
+   presyn_L1_NGC-SA_cNA : 0.000 Hz
+   L1_SLAC_bNA : 0.000 Hz
+   presyn_L1_SLAC_bNA : 0.000 Hz
+   L1_SLAC_cAC : 0.000 Hz
+   presyn_L1_SLAC_cAC : 0.000 Hz
+   L1_SLAC_cNA : 0.000 Hz
+   presyn_L1_SLAC_cNA : 0.000 Hz
+   L23_BP_bAC : 2.500 Hz
+   presyn_L23_BP_bAC : 1.250 Hz
+   L23_BP_bIR : 0.000 Hz
+   presyn_L23_BP_bIR : 0.000 Hz
+   L23_BP_bNA : 2.500 Hz
+   presyn_L23_BP_bNA : 2.000 Hz
+   L23_BP_cAC : 5.000 Hz
+   presyn_L23_BP_cAC : 3.333 Hz
+   L23_BP_cNA : 15.000 Hz
+   presyn_L23_BP_cNA : 5.000 Hz
+   presyn_L23_BP_dST : 0.833 Hz
+   L23_BTC_bAC : 0.000 Hz
+   presyn_L23_BTC_bAC : 0.000 Hz
+   L23_BTC_bIR : 0.000 Hz
+   presyn_L23_BTC_bIR : 0.000 Hz
+   L23_BTC_bNA : 0.000 Hz
+   presyn_L23_BTC_bNA : 0.000 Hz
+   L23_BTC_cAC : 0.000 Hz
+   presyn_L23_BTC_cAC : 0.000 Hz
+   presyn_L23_BTC_cNA : 0.000 Hz
+   L23_ChC_cAC : 1.667 Hz
+   presyn_L23_ChC_cAC : 0.000 Hz
+   L23_ChC_cNA : 1.500 Hz
+   presyn_L23_ChC_cNA : 0.139 Hz
+   L23_ChC_dNA : 0.000 Hz
+   presyn_L23_ChC_dNA : 0.250 Hz
+   L23_DBC_bAC : 0.000 Hz
+   presyn_L23_DBC_bAC : 0.500 Hz
+   L23_DBC_bIR : 0.000 Hz
+   presyn_L23_DBC_bIR : 0.000 Hz
+   L23_DBC_bNA : 0.875 Hz
+   presyn_L23_DBC_bNA : 0.050 Hz
+   L23_DBC_cAC : 0.500 Hz
+   presyn_L23_DBC_cAC : 0.217 Hz
+   L23_LBC_bAC : 0.000 Hz
+   presyn_L23_LBC_bAC : 0.089 Hz
+   L23_LBC_bNA : 9.583 Hz
+   presyn_L23_LBC_bNA : 2.667 Hz
+   L23_LBC_cAC : 3.100 Hz
+   presyn_L23_LBC_cAC : 1.024 Hz
+   L23_LBC_cNA : 2.500 Hz
+   presyn_L23_LBC_cNA : 1.984 Hz
+   L23_LBC_cST : 0.000 Hz
+   presyn_L23_LBC_cST : 0.595 Hz
+   L23_LBC_dNA : 3.698 Hz
+   presyn_L23_LBC_dNA : 1.661 Hz
+   L23_MC_bAC : 0.000 Hz
+   presyn_L23_MC_bAC : 0.000 Hz
+   L23_MC_bNA : 0.000 Hz
+   presyn_L23_MC_bNA : 0.000 Hz
+   L23_MC_cAC : 0.000 Hz
+   presyn_L23_MC_cAC : 0.000 Hz
+   L23_MC_cNA : 0.000 Hz
+   presyn_L23_MC_cNA : 0.000 Hz
+   L23_MC_dNA : 0.000 Hz
+   presyn_L23_MC_dNA : 0.000 Hz
+   L23_NBC_bAC : 0.000 Hz
+   presyn_L23_NBC_bAC : 0.500 Hz
+   L23_NBC_bNA : 1.250 Hz
+   presyn_L23_NBC_bNA : 0.000 Hz
+   L23_NBC_cAC : 0.000 Hz
+   presyn_L23_NBC_cAC : 0.167 Hz
+   L23_NBC_cIR : 0.000 Hz
+   presyn_L23_NBC_cIR : 0.000 Hz
+   L23_NBC_cNA : 0.341 Hz
+   presyn_L23_NBC_cNA : 0.172 Hz
+   L23_NBC_dNA : 0.735 Hz
+   presyn_L23_NBC_dNA : 0.000 Hz
+   L23_NGC_bNA : 0.000 Hz
+   presyn_L23_NGC_bNA : 0.000 Hz
+   L23_NGC_cAC : 0.000 Hz
+   presyn_L23_NGC_cAC : 0.000 Hz
+   L23_NGC_cNA : 0.000 Hz
+   presyn_L23_NGC_cNA : 0.000 Hz
+   L23_NGC_cST : 0.000 Hz
+   presyn_L23_NGC_cST : 0.000 Hz
+   L23_PC_cAD : 0.580 Hz
+   presyn_L23_PC_cAD : 0.246 Hz
+   L23_SBC_bNA : 9.265 Hz
+   presyn_L23_SBC_bNA : 3.721 Hz
+   L23_SBC_cAC : 6.806 Hz
+   presyn_L23_SBC_cAC : 1.250 Hz
+   L23_SBC_dNA : 3.438 Hz
+   presyn_L23_SBC_dNA : 1.750 Hz
+   L4_BP_bAC : 15.000 Hz
+   presyn_L4_BP_bIR : 7.500 Hz
+   L4_BP_bNA : 10.000 Hz
+   presyn_L4_BP_bNA : 0.000 Hz
+   L4_BP_cAC : 15.000 Hz
+   presyn_L4_BP_cAC : 2.500 Hz
+   presyn_L4_BP_cNA : 10.000 Hz
+   presyn_L4_BP_dST : 0.000 Hz
+   L4_BTC_bAC : 5.000 Hz
+   presyn_L4_BTC_bAC : 2.500 Hz
+   presyn_L4_BTC_bIR : 0.000 Hz
+   L4_BTC_bST : 10.000 Hz
+   presyn_L4_BTC_bST : 0.000 Hz
+   L4_BTC_cAC : 13.125 Hz
+   presyn_L4_BTC_cAC : 10.000 Hz
+   L4_BTC_cNA : 27.500 Hz
+   presyn_L4_BTC_cNA : 6.250 Hz
+   L4_BTC_dNA : 2.500 Hz
+   presyn_L4_BTC_dNA : 0.000 Hz
+   L4_ChC_cAC : 57.500 Hz
+   presyn_L4_ChC_cAC : 10.000 Hz
+   presyn_L4_ChC_cNA : 13.333 Hz
+   presyn_L4_ChC_dNA : 0.000 Hz
+   presyn_L4_DBC_bAC : 3.125 Hz
+   L4_DBC_bIR : 1.250 Hz
+   presyn_L4_DBC_bIR : 0.000 Hz
+   L4_DBC_bNA : 10.000 Hz
+   presyn_L4_DBC_bNA : 0.000 Hz
+   presyn_L4_DBC_bST : 0.000 Hz
+   presyn_L4_DBC_cAC : 1.250 Hz
+   L4_DBC_cIR : 0.500 Hz
+   presyn_L4_DBC_cIR : 0.000 Hz
+   presyn_L4_DBC_cNA : 0.625 Hz
+   L4_LBC_cAC : 28.500 Hz
+   presyn_L4_LBC_cAC : 11.912 Hz
+   presyn_L4_LBC_cNA : 20.893 Hz
+   L4_LBC_cST : 16.667 Hz
+   presyn_L4_LBC_cST : 11.842 Hz
+   L4_LBC_dNA : 26.389 Hz
+   presyn_L4_LBC_dNA : 18.176 Hz
+   L4_LBC_dST : 27.500 Hz
+   presyn_L4_LBC_dST : 14.167 Hz
+   L4_MC_bAC : 0.000 Hz
+   presyn_L4_MC_bAC : 0.000 Hz
+   L4_MC_bNA : 0.000 Hz
+   presyn_L4_MC_bNA : 0.000 Hz
+   L4_MC_cAC : 0.104 Hz
+   presyn_L4_MC_cAC : 0.000 Hz
+   L4_MC_cNA : 0.312 Hz
+   presyn_L4_MC_cNA : 0.000 Hz
+   L4_MC_dNA : 0.000 Hz
+   presyn_L4_MC_dNA : 0.000 Hz
+   L4_NBC_cAC : 31.667 Hz
+   presyn_L4_NBC_cAC : 11.429 Hz
+   presyn_L4_NBC_cIR : 9.000 Hz
+   L4_NBC_cNA : 24.667 Hz
+   presyn_L4_NBC_cNA : 30.833 Hz
+   L4_NBC_dNA : 52.500 Hz
+   presyn_L4_NBC_dNA : 15.076 Hz
+   presyn_L4_NGC_bNA : 5.000 Hz
+   L4_NGC_cAC : 15.000 Hz
+   L4_NGC_cNA : 17.500 Hz
+   presyn_L4_NGC_cNA : 2.500 Hz
+   presyn_L4_NGC_cST : 0.000 Hz
+   L4_PC_cAD : 8.061 Hz
+   presyn_L4_PC_cAD : 1.116 Hz
+   L4_SBC_bNA : 39.583 Hz
+   presyn_L4_SBC_bNA : 23.500 Hz
+   L4_SBC_cAC : 29.000 Hz
+   presyn_L4_SBC_cAC : 12.500 Hz
+   L4_SBC_dNA : 41.667 Hz
+   presyn_L4_SBC_dNA : 24.545 Hz
+   L4_SP_cAD : 8.869 Hz
+   presyn_L4_SP_cAD : 2.169 Hz
+   L4_SS_cAD : 10.762 Hz
+   presyn_L4_SS_cAD : 2.392 Hz
+   presyn_L5_BP_bAC : 8.333 Hz
+   L5_BP_bIR : 5.000 Hz
+   presyn_L5_BP_bIR : 0.000 Hz
+   L5_BP_bNA : 36.667 Hz
+   presyn_L5_BP_bNA : 16.667 Hz
+   L5_BP_cAC : 33.750 Hz
+   presyn_L5_BP_cAC : 13.571 Hz
+   presyn_L5_BP_cNA : 30.000 Hz
+   L5_BP_dST : 2.500 Hz
+   presyn_L5_BP_dST : 0.000 Hz
+   L5_BTC_bAC : 20.417 Hz
+   presyn_L5_BTC_bAC : 6.786 Hz
+   L5_BTC_cAC : 17.857 Hz
+   presyn_L5_BTC_cAC : 8.681 Hz
+   L5_BTC_cNA : 31.250 Hz
+   presyn_L5_BTC_cNA : 11.818 Hz
+   presyn_L5_ChC_cAC : 22.857 Hz
+   presyn_L5_ChC_cNA : 28.929 Hz
+   L5_ChC_dNA : 10.000 Hz
+   presyn_L5_ChC_dNA : 34.375 Hz
+   L5_DBC_bAC : 9.167 Hz
+   presyn_L5_DBC_bAC : 2.500 Hz
+   L5_DBC_bIR : 1.667 Hz
+   presyn_L5_DBC_bIR : 0.000 Hz
+   L5_DBC_bNA : 15.000 Hz
+   presyn_L5_DBC_bNA : 3.333 Hz
+   L5_DBC_bST : 3.750 Hz
+   presyn_L5_DBC_bST : 0.000 Hz
+   L5_DBC_cAC : 8.333 Hz
+   presyn_L5_DBC_cAC : 7.917 Hz
+   L5_DBC_cIR : 1.250 Hz
+   presyn_L5_DBC_cIR : 0.000 Hz
+   L5_DBC_cNA : 17.500 Hz
+   presyn_L5_DBC_cNA : 9.286 Hz
+   L5_LBC_bAC : 10.500 Hz
+   presyn_L5_LBC_bAC : 10.000 Hz
+   L5_LBC_cAC : 37.500 Hz
+   presyn_L5_LBC_cAC : 17.500 Hz
+   L5_LBC_cIR : 14.375 Hz
+   presyn_L5_LBC_cIR : 5.000 Hz
+   L5_LBC_cNA : 47.000 Hz
+   presyn_L5_LBC_cNA : 41.296 Hz
+   L5_LBC_cST : 49.062 Hz
+   presyn_L5_LBC_cST : 28.362 Hz
+   L5_LBC_dNA : 50.769 Hz
+   presyn_L5_LBC_dNA : 34.375 Hz
+   L5_LBC_dST : 14.107 Hz
+   presyn_L5_LBC_dST : 22.571 Hz
+   L5_MC_bAC : 0.172 Hz
+   presyn_L5_MC_bAC : 0.345 Hz
+   L5_MC_bIR : 0.000 Hz
+   presyn_L5_MC_bIR : 0.000 Hz
+   L5_MC_bST : 0.000 Hz
+   presyn_L5_MC_bST : 0.000 Hz
+   L5_MC_cAC : 3.281 Hz
+   presyn_L5_MC_cAC : 0.523 Hz
+   L5_MC_cNA : 1.500 Hz
+   presyn_L5_MC_cNA : 0.000 Hz
+   L5_MC_cST : 0.000 Hz
+   presyn_L5_MC_cST : 0.000 Hz
+   L5_MC_dNA : 0.000 Hz
+   presyn_L5_MC_dNA : 0.000 Hz
+   L5_NBC_bAC : 11.000 Hz
+   presyn_L5_NBC_bAC : 7.222 Hz
+   L5_NBC_bIR : 0.000 Hz
+   presyn_L5_NBC_bIR : 3.333 Hz
+   L5_NBC_bST : 31.250 Hz
+   presyn_L5_NBC_bST : 11.471 Hz
+   L5_NBC_cAC : 43.750 Hz
+   presyn_L5_NBC_cAC : 24.219 Hz
+   L5_NBC_cIR : 27.083 Hz
+   presyn_L5_NBC_cIR : 10.625 Hz
+   L5_NBC_cNA : 46.136 Hz
+   presyn_L5_NBC_cNA : 34.107 Hz
+   L5_NBC_cST : 48.000 Hz
+   presyn_L5_NBC_cST : 15.917 Hz
+   L5_NBC_dST : 20.000 Hz
+   presyn_L5_NBC_dST : 28.750 Hz
+   L5_NGC_bNA : 27.500 Hz
+   presyn_L5_NGC_cAC : 15.000 Hz
+   L5_NGC_cNA : 32.500 Hz
+   presyn_L5_NGC_cNA : 25.833 Hz
+   presyn_L5_NGC_cST : 0.000 Hz
+   L5_SBC_bNA : 32.500 Hz
+   presyn_L5_SBC_bNA : 22.500 Hz
+   L5_SBC_cAC : 31.875 Hz
+   presyn_L5_SBC_cAC : 13.500 Hz
+   L5_SBC_dNA : 41.667 Hz
+   presyn_L5_SBC_dNA : 48.750 Hz
+   L5_STPC_cAD : 12.188 Hz
+   presyn_L5_STPC_cAD : 3.953 Hz
+   L5_TTPC1_cAD : 11.613 Hz
+   presyn_L5_TTPC1_cAD : 2.907 Hz
+   L5_TTPC2_cAD : 11.838 Hz
+   presyn_L5_TTPC2_cAD : 3.134 Hz
+   L5_UTPC_cAD : 15.236 Hz
+   presyn_L5_UTPC_cAD : 4.813 Hz
+   L6_BPC_cAD : 11.218 Hz
+   presyn_L6_BPC_cAD : 1.526 Hz
+   L6_BP_bAC : 18.333 Hz
+   presyn_L6_BP_bAC : 4.167 Hz
+   L6_BP_bIR : 3.333 Hz
+   presyn_L6_BP_bIR : 0.000 Hz
+   L6_BP_bNA : 18.750 Hz
+   presyn_L6_BP_bNA : 11.912 Hz
+   L6_BP_cAC : 20.000 Hz
+   presyn_L6_BP_cAC : 12.031 Hz
+   L6_BP_cNA : 30.000 Hz
+   presyn_L6_BP_cNA : 21.875 Hz
+   L6_BP_dST : 1.250 Hz
+   presyn_L6_BP_dST : 0.000 Hz
+   L6_BTC_bAC : 16.875 Hz
+   presyn_L6_BTC_bAC : 6.250 Hz
+   L6_BTC_cAC : 10.625 Hz
+   presyn_L6_BTC_cAC : 6.250 Hz
+   L6_BTC_cNA : 33.333 Hz
+   presyn_L6_BTC_cNA : 18.214 Hz
+   L6_ChC_cAC : 57.500 Hz
+   presyn_L6_ChC_cAC : 8.333 Hz
+   presyn_L6_ChC_cNA : 43.333 Hz
+   presyn_L6_ChC_dNA : 22.500 Hz
+   presyn_L6_DBC_bAC : 6.667 Hz
+   L6_DBC_bIR : 2.500 Hz
+   presyn_L6_DBC_bIR : 0.625 Hz
+   L6_DBC_bNA : 10.000 Hz
+   presyn_L6_DBC_bNA : 3.750 Hz
+   presyn_L6_DBC_bST : 3.333 Hz
+   L6_DBC_cAC : 2.500 Hz
+   presyn_L6_DBC_cAC : 10.000 Hz
+   presyn_L6_DBC_cIR : 1.667 Hz
+   presyn_L6_DBC_cNA : 2.500 Hz
+   L6_IPC_cAD : 9.901 Hz
+   presyn_L6_IPC_cAD : 2.215 Hz
+   L6_LBC_bAC : 16.429 Hz
+   presyn_L6_LBC_bAC : 6.036 Hz
+   L6_LBC_bIR : 7.759 Hz
+   presyn_L6_LBC_bIR : 2.806 Hz
+   L6_LBC_bNA : 68.438 Hz
+   presyn_L6_LBC_bNA : 43.643 Hz
+   L6_LBC_bST : 35.982 Hz
+   presyn_L6_LBC_bST : 23.646 Hz
+   L6_LBC_cNA : 54.500 Hz
+   presyn_L6_LBC_cNA : 44.297 Hz
+   L6_LBC_cST : 34.231 Hz
+   presyn_L6_LBC_cST : 15.500 Hz
+   L6_MC_bAC : 0.000 Hz
+   presyn_L6_MC_bAC : 0.000 Hz
+   L6_MC_bIR : 0.000 Hz
+   presyn_L6_MC_bIR : 0.000 Hz
+   L6_MC_bNA : 0.000 Hz
+   presyn_L6_MC_bNA : 0.000 Hz
+   L6_MC_bST : 0.000 Hz
+   presyn_L6_MC_bST : 0.000 Hz
+   L6_MC_cAC : 1.522 Hz
+   presyn_L6_MC_cAC : 0.035 Hz
+   L6_MC_cIR : 0.000 Hz
+   presyn_L6_MC_cIR : 0.000 Hz
+   L6_MC_cNA : 0.000 Hz
+   presyn_L6_MC_cNA : 0.000 Hz
+   presyn_L6_NBC_bAC : 6.607 Hz
+   L6_NBC_bIR : 19.167 Hz
+   presyn_L6_NBC_bIR : 3.409 Hz
+   L6_NBC_bST : 37.708 Hz
+   presyn_L6_NBC_bST : 26.500 Hz
+   L6_NBC_cAC : 20.833 Hz
+   presyn_L6_NBC_cAC : 11.288 Hz
+   L6_NBC_cIR : 18.750 Hz
+   presyn_L6_NBC_cIR : 3.958 Hz
+   L6_NBC_cNA : 30.909 Hz
+   presyn_L6_NBC_cNA : 28.942 Hz
+   L6_NBC_cST : 27.692 Hz
+   presyn_L6_NBC_cST : 23.462 Hz
+   L6_NBC_dST : 2.500 Hz
+   presyn_L6_NBC_dST : 30.385 Hz
+   presyn_L6_NGC_bNA : 12.500 Hz
+   presyn_L6_NGC_cAC : 8.750 Hz
+   L6_NGC_cNA : 37.500 Hz
+   presyn_L6_NGC_cNA : 21.750 Hz
+   L6_NGC_cST : 5.000 Hz
+   presyn_L6_NGC_cST : 0.000 Hz
+   L6_SBC_bNA : 65.000 Hz
+   presyn_L6_SBC_bNA : 41.184 Hz
+   L6_SBC_cAC : 55.625 Hz
+   presyn_L6_SBC_cAC : 23.594 Hz
+   L6_SBC_dNA : 30.000 Hz
+   presyn_L6_SBC_dNA : 25.000 Hz
+   L6_TPC_L1_cAD : 10.614 Hz
+   presyn_L6_TPC_L1_cAD : 1.974 Hz
+   L6_TPC_L4_cAD : 11.540 Hz
+   presyn_L6_TPC_L4_cAD : 2.769 Hz
+   L6_UTPC_cAD : 12.217 Hz
+   presyn_L6_UTPC_cAD : 2.869 Hz
+   presyn_ss_RTN_o : 9.472 Hz
+   presyn_ss_RTN_m : 9.883 Hz
+   presyn_ss_RTN_i : 9.371 Hz
+   presyn_VPL_sTC : 0.957 Hz
+   presyn_VPM_sTC : 1.014 Hz
+   presyn_POm_sTC_s1 : 1.649 Hz
+Saving output as ../data/v200_batch1/v200_batch1_data.pkl ... 
+Finished saving!
+  Done; saving time = 22.24 s.
+Preparing spike data...
+Plotting raster...
+Plotting recorded cell traces ... trace
+Plotting 2D representation of network cell locations and connections...
+  Done; plotting time = 91.64 s
+
+Total time = 6343.38 s
+numprocs=96
+NEURON -- VERSION 8.2.dev-25-g548348a2+ master (548348a2+) 2022-04-21
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2021
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod//ar_traub.mod" "mod//cadad.mod" "mod//CaDynamics_E2.mod" "mod//cadyn.mod" "mod//cagk.mod" "mod//Ca_HVA.mod" "mod//cal_mh.mod" "mod//cal_mig.mod" "mod//Ca_LVAst.mod" "mod//Ca.mod" "mod//cancr.mod" "mod//canin.mod" "mod//can_mig.mod" "mod//catcb.mod" "mod//cat_mig.mod" "mod//cat_traub.mod" "mod//ch_CavL.mod" "mod//ch_CavN.mod" "mod//ch_KCaS.mod" "mod//ch_Kdrfastngf.mod" "mod//ch_KvAngf.mod" "mod//ch_KvCaB.mod" "mod//ch_leak.mod" "mod//ch_Navngf.mod" "mod//DetAMPANMDA.mod" "mod//DetGABAAB.mod" "mod//gabab.mod" "mod//h_BS.mod" "mod//HCN1.mod" "mod//HH2.mod" "mod//h_harnett.mod" "mod//hin.mod" "mod//h_kole.mod" "mod//h_migliore.mod" "mod//htc.mod" "mod//ican_sidi.mod" "mod//iccr.mod" "mod//IC.mod" "mod//iconc_Ca.mod" "mod//Ih.mod" "mod//ikscr.mod" "mod//IKsin.mod" "mod//Im.mod" "mod//IT2.mod" "mod//IT.mod" "mod//kap_BS.mod" "mod//kapcb.mod" "mod//kapin.mod" "mod//kBK.mod" "mod//kca.mod" "mod//kctin.mod" "mod//kdmc_BS.mod" "mod//kdr_BS.mod" "mod//kdrcr.mod" "mod//kdrin.mod" "mod//KdShu2007.mod" "mod//kl.mod" "mod//km.mod" "mod//K_Pst.mod" "mod//K_Tst.mod" "mod//kv.mod" "mod//MyExp2SynBB.mod" "mod//my_exp2syn.mod" "mod//MyExp2SynNMDABB.mod" "mod//nafcr.mod" "mod//nafx.mod" "mod//Nap_Et2.mod" "mod//nap_sidi.mod" "mod//NaTa_t.mod" "mod//NaTs2_t.mod" "mod//nax_BS.mod" "mod//naz.mod" "mod//Nca.mod" "mod//ProbAMPANMDA_EMS.mod" "mod//ProbGABAAB_EMS.mod" "mod//savedist.mod" "mod//SK_E2.mod" "mod//SKv3_1.mod" "mod//StochKv_deterministic.mod" "mod//StochKv.mod" "mod//tia.mod" "mod//vecstim.mod"
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 7519327 ON r506c06n01 CANCELLED AT 2023-02-15T22:47:07 ***
+slurmstepd: error: *** STEP 7519327.1 ON r506c06n01 CANCELLED AT 2023-02-15T22:47:07 ***
