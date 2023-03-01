@@ -291,7 +291,7 @@ for syntype in syntypes:
                                          'tau_r_GABAA': 0.2,   #rng.lognormal(0.2, 0.1) in synapses.hoc  
                                          'tau_d_GABAB': 260.9,
                                          'tau_r_GABAB': 3.5,
-                                         'e_GABAA': -78.0, #= -80   (mV) : GABAA reversal potential
+                                         'e_GABAA': -80.0, #= -80   (mV) : GABAA reversal potential
 #                                          'GABAB_ratio': 1.0,  #=0(1):The ratio of GABAB to GABAA  ?          
                                             }
         
