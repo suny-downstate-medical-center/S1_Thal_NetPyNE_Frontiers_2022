@@ -563,7 +563,7 @@ if cfg.addConn:
                             'sec': 'spinyEE'}    
 
                         if 'L5' == pre[0:2] and 'L5' == post[0:2]:   
-                            netParams.connParams['EE_'+pre+'_'+post]['weight'] = 1.5 * parameters_syn['gsyn',connID] * cfg.EEGain
+                            netParams.connParams['EE_'+pre+'_'+post]['weight'] = 1.25 * parameters_syn['gsyn',connID] * cfg.EEGain
                             # print(pre,post,netParams.connParams['EE_'+pre+'_'+post]['weight'])
 
     

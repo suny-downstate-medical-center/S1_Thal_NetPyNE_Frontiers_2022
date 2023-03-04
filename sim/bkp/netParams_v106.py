@@ -315,7 +315,7 @@ for syntype in syntypes:
                                          'tau_r_GABAA': 0.2,   #rng.lognormal(0.2, 0.1) in synapses.hoc  
                                          'tau_d_GABAB': 260.9,
                                          'tau_r_GABAB': 3.5,
-                                         'e_GABAA': -80.0, #= -80   (mV) : GABAA reversal potential
+                                         'e_GABAA': -70.0, #= -80   (mV) : GABAA reversal potential
 #                                          'GABAB_ratio': 1.0,  #=0(1):The ratio of GABAB to GABAA   ?       
                                             }
 
@@ -561,11 +561,6 @@ if cfg.addConn:
                             'delay': 'defaultDelay+dist_3D/propVelocity',
                             'synsPerConn': int(synperconnNumber[pre][post]+0.5),
                             'sec': 'spinyEE'}    
-
-                        if 'L5' == pre[0:2] and 'L5' == post[0:2]:   
-                            netParams.connParams['EE_'+pre+'_'+post]['weight'] = 1.5 * parameters_syn['gsyn',connID] * cfg.EEGain
-                            # print(pre,post,netParams.connParams['EE_'+pre+'_'+post]['weight'])
-
     
                         netParams.connParams['VS_'+'EE_'+pre+'_'+post] = { 
                             'preConds': {'pop': ['presyn_'+metypeVs for metypeVs in cfg.popLabelEl[pre]]}, 
@@ -781,6 +776,4 @@ netParams.description = """
 - v104 - 'e_GABAA': -78.0
 - v105 - 'e_GABAA': -78.0 (only to excitatory neurons)
 - v106 - 'e_GABAA': -70.0 (only to excitatory L5 neurons)
-- v107 - 'e_GABAA': -00.0 (but excitatory-excitatory L5 conn 1.25*strength basal)
-- v108 - 'e_GABAA': -00.0 (but excitatory-excitatory L5 conn 1.50*strength basal)
 """

@@ -233,7 +233,7 @@ if cfg.recordDipole: cfg.saveDipoleCells = cfg.S1cells
 #------------------------------------------------------------------------------
 # Saving
 #------------------------------------------------------------------------------
-cfg.simLabel = 'v106_batch0'       #   + str(cfg.cynradNumber)
+cfg.simLabel = 'v108_batch0'       #   + str(cfg.cynradNumber)
 cfg.saveFolder = '../data/'+cfg.simLabel
 # cfg.filename =                	## Set file output name
 cfg.savePickle = True	        	## Save pkl file
