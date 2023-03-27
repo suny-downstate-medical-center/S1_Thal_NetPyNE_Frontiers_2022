@@ -1,0 +1,4 @@
+319c319
+<                 urand = scop_random(1)
+---
+>                 value = scop_random(1)
