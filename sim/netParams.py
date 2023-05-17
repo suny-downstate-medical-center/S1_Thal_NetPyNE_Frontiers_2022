@@ -196,13 +196,13 @@ for cellName in cfg.S1cells:
 
                 netParams.cellParams[cellMe]['secs'][section]['geom']['pt3d'][ipt] = (x * c - z * s, y, x * s + z * c, d)
 
-#------------------------------------------------------------------------------
-#  extracellular mechs
-#------------------------------------------------------------------------------
-for celltyp in netParams.cellParams.keys():
-    label = []
-    for secname in netParams.cellParams[celltyp]['secs'].keys():
-        netParams.cellParams[celltyp]['secs'][secname]['mechs']['extracellular'] = {}
+# #------------------------------------------------------------------------------
+# #  extracellular mechs
+# #------------------------------------------------------------------------------
+# for celltyp in netParams.cellParams.keys():
+#     label = []
+#     for secname in netParams.cellParams[celltyp]['secs'].keys():
+#         netParams.cellParams[celltyp]['secs'][secname]['mechs']['extracellular'] = {}
 
 #------------------------------------------------------------------------------
 # load data from S1 conn pre-processing file 
@@ -266,7 +266,7 @@ for syntype in syntypes:
 #  mods from S1 BBP - deterministic version
 for syntype in syntypes:
     if syntype > 50:  # Exc
-      
+        
         netParams.synMechParams['S1_EE_STP_Det_' + str(syntype)] = {'mod': 'DetAMPANMDA',
                                          'Use': dfS6['use'][syntype]*cfg.use_frac['EE'], # ± dfS6['useStd'][syntype]
                                          'Dep': dfS6['dep'][syntype], # ± dfS6['depStd'][syntype] 
@@ -591,7 +591,13 @@ if cfg.addConn:
                             cellpostList_A = cfg.popLabelEl[post]         
                              
                         connID = ConnTypes[pre][post][0]      
-                        synMechType = 'S1_EI_STP_Det_' + str(connID)  
+
+
+                        if 'DBC' in post or 'BTC' in post or 'MC' in post or 'BP' in post:  # steep Ca2+ dependence for connections between PC-distal targeting cell types (DBC, BTC, MC, BP)
+                            synMechType = 'S1_EIdistal_STP_Det_' + str(connID)
+                        else: # shallow dependence between PC-proximal targeting cell types (LBCs, NBCs, SBCs, ChC) + L1s and NGCs ????
+                            synMechType = 'S1_EIproximal_STP_Det_' + str(connID)  
+
                         contA+= 1                                                              
                         netParams.connParams['EI_'+pre+'_'+post] = { 
                                         'preConds': {'pop': cfg.popLabelEl[pre]}, 
@@ -617,7 +623,13 @@ if cfg.addConn:
 
                         if connID_B >= 0:          
                             connID = connID_B
-                            synMechType = 'S1_EI_STP_Det_' + str(connID)        
+
+                            if 'DBC' in post or 'BTC' in post or 'MC' in post or 'BP' in post:  # steep Ca2+ dependence for connections between PC-distal targeting cell types (DBC, BTC, MC, BP)
+                                synMechType = 'S1_EIdistal_STP_Det_' + str(connID)
+                            else: # shallow dependence between PC-proximal targeting cell types (LBCs, NBCs, SBCs, ChC) + L1s and NGCs ????
+                                synMechType = 'S1_EIproximal_STP_Det_' + str(connID)  
+
+
                             netParams.connParams['EI_'+pre+'_'+post+'_B'] = { 
                                             'preConds': {'pop': cfg.popLabelEl[pre]}, 
                                             'postConds': {'pop': cellpostList_B},
@@ -759,8 +771,5 @@ netParams.description = """
 - v9 - STP stoch
 - v10 - in vivo like conditions with axon pt3d positions fixed
 - v100 - in vivo like conditions with axon pt3d positions fixed LFP
-- v101 - 'e_GABAA': -80.0, (mV) : GABAA reversal potential
-- v102 - 'e_GABAA': -70.0
-- v103 - 'e_GABAA': -79.0
-- v104 - 'e_GABAA': -78.0
+- v200 - osc. V extracellular
 """
