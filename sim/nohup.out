@@ -1,0 +1,12 @@
+Installed tk event loop hook.
+Saving batch to ../data/v200_batch1/v200_batch1_batch.json ... 
+radius from 0.0 to 42.0 micrometers
+(0,) (1000,)
+('seeds', 'stim') = 1000
+Saving simConfig to ../data/v200_batch1/v200_batch1_0_cfg.json ... 
+Running job  ../data/v200_batch1/v200_batch1_0
+mpiexec --use-hwthread-cpus -n 8 nrniv -python -mpi init.py simConfig=../data/v200_batch1/v200_batch1_0_cfg.json netParams=../data/v200_batch1/v200_batch1_netParams.py
+
+--------------------------------------------------------------------------------
+   Finished creating jobs for parameter exploration   
+--------------------------------------------------------------------------------

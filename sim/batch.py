@@ -34,7 +34,7 @@ def setRunCfg(b, type='mpi_bulletin'):
 
     elif type=='mpi_direct':
         b.runCfg = {'type': 'mpi_direct',
-            'cores': 10,
+            'cores': 4,
             'script': 'init.py',
             'mpiCommand': 'mpiexec', # --use-hwthread-cpus
             'skip': True}
@@ -56,14 +56,42 @@ def setRunCfg(b, type='mpi_bulletin'):
             'mpiCommand': 'mpirun',
             'skipCustom': '_raster_gid.png'}
 
+    elif type == 'hpc_slurm_Expanse_debug':
+        b.runCfg = {'type': 'hpc_slurm',
+                    'allocation': 'TG-IBN140002',
+                    'partition': 'debug',
+                    'walltime': '1:00:00',
+                    'nodes': 1,
+                    'coresPerNode': 4,
+                    'email': 'fernandodasilvaborges@gmail.com',
+                    'folder': '/home/fborges/S1_Thal_NetPyNE_Frontiers_2022/sim/',
+                    'script': 'init.py',
+                    'mpiCommand': 'mpirun',
+                    'custom': '#SBATCH --mem=249325M\n#SBATCH --export=ALL\n#SBATCH --partition=debug',
+                    'skip': True}
+
+    elif type == 'hpc_slurm_Expanse':
+        b.runCfg = {'type': 'hpc_slurm',
+                    'allocation': 'TG-IBN140002',
+                    'partition': 'large-shared',
+                    'walltime': '8:00:00',
+                    'nodes': 1,
+                    'coresPerNode': 128,
+                    'email': 'fernandodasilvaborges@gmail.com',
+                    'folder': '/home/fborges/S1_Thal_NetPyNE_Frontiers_2022/sim/',
+                    'script': 'init.py',
+                    'mpiCommand': 'mpirun',
+                    'custom': '#SBATCH --mem=512G\n#SBATCH --export=ALL\n#SBATCH --partition=large-shared',
+                    'skip': True}
+
 # ----------------------------------------------------------------------------------------------
 # Main code
 # ----------------------------------------------------------------------------------------------
 if __name__ == '__main__': 
     b = custom() #
 
-    b.batchLabel = 'v200_batch1'  
+    b.batchLabel = 'v200_batch2'  
     b.saveFolder = '../data/'+b.batchLabel
     b.method = 'grid'
-    setRunCfg(b, 'mpi_direct')
+    setRunCfg(b, 'hpc_slurm_Expanse_debug')
     b.run() # run batch

@@ -1,0 +1,319 @@
+numprocs=4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from ../data/v200_batch1/v200_batch1_0_cfg.json
+Loading file ../data/v200_batch1/v200_batch1_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from ../data/v200_batch1/v200_batch1_netParams.py
+  Number of cells on node 2: 9653 
+Recording 36 traces of 1 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from ../data/v200_batch1/v200_batch1_0_cfg.json
+Loading file ../data/v200_batch1/v200_batch1_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from ../data/v200_batch1/v200_batch1_netParams.py
+  Number of cells on node 1: 9653 
+Recording 31 traces of 1 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from ../data/v200_batch1/v200_batch1_0_cfg.json
+Loading file ../data/v200_batch1/v200_batch1_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from ../data/v200_batch1/v200_batch1_netParams.py
+  Number of cells on node 3: 9653 
+Recording 40 traces of 1 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from ../data/v200_batch1/v200_batch1_0_cfg.json
+Loading file ../data/v200_batch1/v200_batch1_0_cfg.json ... 
+Loading simConfig...
+Importing netParams from ../data/v200_batch1/v200_batch1_netParams.py
+
+Start time:  2023-07-03 19:27:38.037187
+
+Creating network of 252 cell populations on 4 hosts...
+  Number of cells on node 0: 9653 
+  Done; cell creation time = 3.62 s.
+Recording 34 traces of 1 types on node 0
+0.0s
+
+Running simulation using NEURON for 500.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+0.5s
+  Done; run time = 691.45 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 4.79 s.
+
+Analyzing...
+  Cells: 38612
+  Connections: 0 (0.00 per cell)
+  Spikes: 58614 (3.04 Hz)
+  Simulated time: 0.5 s; 4 workers
+  Run time: 691.45 s
+   presyn_L1_DAC_bNA : 0.000 Hz
+   L1_DAC_cNA : 0.000 Hz
+   presyn_L1_DAC_cNA : 0.000 Hz
+   presyn_L1_DLAC_cNA : 0.000 Hz
+   L1_HAC_bNA : 0.000 Hz
+   presyn_L1_HAC_bNA : 0.000 Hz
+   presyn_L1_HAC_cIR : 0.000 Hz
+   presyn_L1_HAC_cNA : 0.000 Hz
+   presyn_L1_NGC-DA_bNA : 0.000 Hz
+   presyn_L1_NGC-DA_cAC : 0.000 Hz
+   presyn_L1_NGC-DA_cNA : 0.000 Hz
+   presyn_L1_NGC-DA_cST : 0.000 Hz
+   L1_NGC-SA_cNA : 9.333 Hz
+   presyn_L1_NGC-SA_cNA : 0.000 Hz
+   presyn_L1_SLAC_bNA : 0.143 Hz
+   presyn_L1_SLAC_cAC : 0.000 Hz
+   L1_SLAC_cNA : 0.000 Hz
+   presyn_L1_SLAC_cNA : 0.000 Hz
+   presyn_L23_BP_bAC : 1.333 Hz
+   presyn_L23_BP_bIR : 0.000 Hz
+   presyn_L23_BP_bNA : 2.857 Hz
+   presyn_L23_BP_cAC : 3.429 Hz
+   presyn_L23_BP_cNA : 5.000 Hz
+   presyn_L23_BP_dST : 2.000 Hz
+   presyn_L23_BTC_bAC : 0.000 Hz
+   presyn_L23_BTC_bIR : 0.000 Hz
+   presyn_L23_BTC_bNA : 0.000 Hz
+   presyn_L23_BTC_cAC : 0.000 Hz
+   presyn_L23_BTC_cNA : 0.000 Hz
+   presyn_L23_ChC_cAC : 0.000 Hz
+   presyn_L23_ChC_cNA : 0.174 Hz
+   presyn_L23_ChC_dNA : 0.133 Hz
+   presyn_L23_DBC_bAC : 0.333 Hz
+   presyn_L23_DBC_bIR : 0.000 Hz
+   L23_DBC_bNA : 0.000 Hz
+   presyn_L23_DBC_bNA : 0.406 Hz
+   presyn_L23_DBC_cAC : 0.525 Hz
+   L23_LBC_bAC : 0.000 Hz
+   presyn_L23_LBC_bAC : 0.235 Hz
+   presyn_L23_LBC_bNA : 3.333 Hz
+   presyn_L23_LBC_cAC : 1.148 Hz
+   L23_LBC_cNA : 2.000 Hz
+   presyn_L23_LBC_cNA : 1.840 Hz
+   presyn_L23_LBC_cST : 1.000 Hz
+   L23_LBC_dNA : 0.000 Hz
+   presyn_L23_LBC_dNA : 1.914 Hz
+   presyn_L23_MC_bAC : 0.000 Hz
+   presyn_L23_MC_bNA : 0.000 Hz
+   presyn_L23_MC_cAC : 0.000 Hz
+   L23_MC_cNA : 0.000 Hz
+   presyn_L23_MC_cNA : 0.000 Hz
+   presyn_L23_MC_dNA : 0.000 Hz
+   presyn_L23_NBC_bAC : 0.286 Hz
+   presyn_L23_NBC_bNA : 0.333 Hz
+   presyn_L23_NBC_cAC : 0.277 Hz
+   presyn_L23_NBC_cIR : 0.000 Hz
+   L23_NBC_cNA : 0.000 Hz
+   presyn_L23_NBC_cNA : 0.179 Hz
+   presyn_L23_NBC_dNA : 0.021 Hz
+   presyn_L23_NGC_bNA : 0.000 Hz
+   presyn_L23_NGC_cAC : 0.000 Hz
+   presyn_L23_NGC_cNA : 0.146 Hz
+   presyn_L23_NGC_cST : 0.000 Hz
+   L23_PC_cAD : 0.483 Hz
+   presyn_L23_PC_cAD : 0.253 Hz
+   presyn_L23_SBC_bNA : 3.467 Hz
+   presyn_L23_SBC_cAC : 2.167 Hz
+   presyn_L23_SBC_dNA : 2.043 Hz
+   presyn_L4_BP_bAC : 10.000 Hz
+   presyn_L4_BP_bIR : 8.000 Hz
+   presyn_L4_BP_bNA : 7.000 Hz
+   presyn_L4_BP_cAC : 5.000 Hz
+   presyn_L4_BP_cNA : 12.000 Hz
+   presyn_L4_BP_dST : 0.000 Hz
+   presyn_L4_BTC_bAC : 2.000 Hz
+   presyn_L4_BTC_bIR : 0.000 Hz
+   presyn_L4_BTC_bST : 1.000 Hz
+   presyn_L4_BTC_cAC : 5.778 Hz
+   presyn_L4_BTC_cNA : 5.333 Hz
+   presyn_L4_BTC_dNA : 0.000 Hz
+   presyn_L4_ChC_cAC : 16.000 Hz
+   presyn_L4_ChC_cNA : 12.000 Hz
+   presyn_L4_ChC_dNA : 0.000 Hz
+   presyn_L4_DBC_bAC : 3.500 Hz
+   presyn_L4_DBC_bIR : 0.000 Hz
+   presyn_L4_DBC_bNA : 0.500 Hz
+   presyn_L4_DBC_bST : 0.000 Hz
+   presyn_L4_DBC_cAC : 1.500 Hz
+   L4_DBC_cIR : 0.000 Hz
+   presyn_L4_DBC_cIR : 0.000 Hz
+   presyn_L4_DBC_cNA : 1.000 Hz
+   presyn_L4_LBC_cAC : 12.000 Hz
+   presyn_L4_LBC_cNA : 20.714 Hz
+   presyn_L4_LBC_cST : 10.839 Hz
+   L4_LBC_dNA : 0.000 Hz
+   presyn_L4_LBC_dNA : 19.289 Hz
+   presyn_L4_LBC_dST : 14.444 Hz
+   presyn_L4_MC_bAC : 0.000 Hz
+   presyn_L4_MC_bNA : 0.000 Hz
+   presyn_L4_MC_cAC : 0.000 Hz
+   presyn_L4_MC_cNA : 0.111 Hz
+   presyn_L4_MC_dNA : 0.000 Hz
+   presyn_L4_NBC_cAC : 13.000 Hz
+   presyn_L4_NBC_cIR : 8.800 Hz
+   L4_NBC_cNA : 0.000 Hz
+   presyn_L4_NBC_cNA : 26.500 Hz
+   presyn_L4_NBC_dNA : 14.667 Hz
+   presyn_L4_NGC_bNA : 4.000 Hz
+   presyn_L4_NGC_cAC : 4.000 Hz
+   presyn_L4_NGC_cNA : 4.000 Hz
+   presyn_L4_NGC_cST : 0.000 Hz
+   L4_PC_cAD : 0.000 Hz
+   presyn_L4_PC_cAD : 1.120 Hz
+   presyn_L4_SBC_bNA : 21.429 Hz
+   presyn_L4_SBC_cAC : 12.636 Hz
+   presyn_L4_SBC_dNA : 21.882 Hz
+   L4_SP_cAD : 0.000 Hz
+   presyn_L4_SP_cAD : 2.259 Hz
+   L4_SS_cAD : 0.000 Hz
+   presyn_L4_SS_cAD : 2.597 Hz
+   presyn_L5_BP_bAC : 8.667 Hz
+   presyn_L5_BP_bIR : 0.000 Hz
+   presyn_L5_BP_bNA : 19.111 Hz
+   presyn_L5_BP_cAC : 14.444 Hz
+   presyn_L5_BP_cNA : 31.200 Hz
+   presyn_L5_BP_dST : 0.000 Hz
+   L5_BTC_bAC : 0.000 Hz
+   presyn_L5_BTC_bAC : 7.667 Hz
+   L5_BTC_cAC : 0.000 Hz
+   presyn_L5_BTC_cAC : 9.265 Hz
+   presyn_L5_BTC_cNA : 12.462 Hz
+   presyn_L5_ChC_cAC : 21.714 Hz
+   presyn_L5_ChC_cNA : 29.429 Hz
+   presyn_L5_ChC_dNA : 28.000 Hz
+   presyn_L5_DBC_bAC : 2.889 Hz
+   presyn_L5_DBC_bIR : 0.059 Hz
+   presyn_L5_DBC_bNA : 4.889 Hz
+   presyn_L5_DBC_bST : 0.000 Hz
+   presyn_L5_DBC_cAC : 8.667 Hz
+   presyn_L5_DBC_cIR : 0.000 Hz
+   presyn_L5_DBC_cNA : 10.667 Hz
+   presyn_L5_LBC_bAC : 8.833 Hz
+   presyn_L5_LBC_cAC : 17.200 Hz
+   presyn_L5_LBC_cIR : 3.846 Hz
+   presyn_L5_LBC_cNA : 39.027 Hz
+   L5_LBC_cST : 0.000 Hz
+   presyn_L5_LBC_cST : 25.389 Hz
+   L5_LBC_dNA : 0.000 Hz
+   presyn_L5_LBC_dNA : 30.444 Hz
+   presyn_L5_LBC_dST : 20.980 Hz
+   presyn_L5_MC_bAC : 0.331 Hz
+   presyn_L5_MC_bIR : 0.000 Hz
+   presyn_L5_MC_bST : 0.000 Hz
+   presyn_L5_MC_cAC : 0.845 Hz
+   L5_MC_cNA : 0.000 Hz
+   presyn_L5_MC_cNA : 0.000 Hz
+   presyn_L5_MC_cST : 0.000 Hz
+   presyn_L5_MC_dNA : 0.000 Hz
+   presyn_L5_NBC_bAC : 6.714 Hz
+   presyn_L5_NBC_bIR : 2.571 Hz
+   presyn_L5_NBC_bST : 16.148 Hz
+   presyn_L5_NBC_cAC : 22.700 Hz
+   presyn_L5_NBC_cIR : 10.571 Hz
+   presyn_L5_NBC_cNA : 32.923 Hz
+   L5_NBC_cST : 0.000 Hz
+   presyn_L5_NBC_cST : 18.718 Hz
+   presyn_L5_NBC_dST : 24.615 Hz
+   presyn_L5_NGC_bNA : 16.000 Hz
+   presyn_L5_NGC_cAC : 14.000 Hz
+   presyn_L5_NGC_cNA : 29.200 Hz
+   presyn_L5_NGC_cST : 0.000 Hz
+   L5_SBC_bNA : 0.000 Hz
+   presyn_L5_SBC_bNA : 19.750 Hz
+   presyn_L5_SBC_cAC : 12.444 Hz
+   L5_SBC_dNA : 0.000 Hz
+   presyn_L5_SBC_dNA : 47.667 Hz
+   L5_STPC_cAD : 0.000 Hz
+   presyn_L5_STPC_cAD : 3.733 Hz
+   L5_TTPC1_cAD : 0.000 Hz
+   presyn_L5_TTPC1_cAD : 2.888 Hz
+   L5_TTPC2_cAD : 0.000 Hz
+   presyn_L5_TTPC2_cAD : 3.065 Hz
+   presyn_L5_UTPC_cAD : 5.304 Hz
+   L6_BPC_cAD : 0.000 Hz
+   presyn_L6_BPC_cAD : 1.529 Hz
+   presyn_L6_BP_bAC : 5.000 Hz
+   presyn_L6_BP_bIR : 0.000 Hz
+   presyn_L6_BP_bNA : 11.684 Hz
+   presyn_L6_BP_cAC : 12.842 Hz
+   presyn_L6_BP_cNA : 20.000 Hz
+   presyn_L6_BP_dST : 0.000 Hz
+   presyn_L6_BTC_bAC : 6.000 Hz
+   presyn_L6_BTC_cAC : 6.706 Hz
+   presyn_L6_BTC_cNA : 13.200 Hz
+   presyn_L6_ChC_cAC : 8.667 Hz
+   presyn_L6_ChC_cNA : 44.333 Hz
+   presyn_L6_ChC_dNA : 23.000 Hz
+   presyn_L6_DBC_bAC : 6.667 Hz
+   presyn_L6_DBC_bIR : 0.400 Hz
+   presyn_L6_DBC_bNA : 6.667 Hz
+   presyn_L6_DBC_bST : 2.667 Hz
+   presyn_L6_DBC_cAC : 10.000 Hz
+   presyn_L6_DBC_cIR : 1.667 Hz
+   presyn_L6_DBC_cNA : 3.333 Hz
+   L6_IPC_cAD : 0.000 Hz
+   presyn_L6_IPC_cAD : 2.265 Hz
+   presyn_L6_LBC_bAC : 5.643 Hz
+   presyn_L6_LBC_bIR : 2.709 Hz
+   presyn_L6_LBC_bNA : 48.326 Hz
+   L6_LBC_bST : 0.000 Hz
+   presyn_L6_LBC_bST : 21.610 Hz
+   presyn_L6_LBC_cNA : 41.429 Hz
+   presyn_L6_LBC_cST : 20.977 Hz
+   presyn_L6_MC_bAC : 0.000 Hz
+   presyn_L6_MC_bIR : 0.000 Hz
+   presyn_L6_MC_bNA : 0.000 Hz
+   presyn_L6_MC_bST : 0.000 Hz
+   L6_MC_cAC : 0.000 Hz
+   presyn_L6_MC_cAC : 0.065 Hz
+   presyn_L6_MC_cIR : 0.000 Hz
+   presyn_L6_MC_cNA : 0.143 Hz
+   presyn_L6_NBC_bAC : 7.143 Hz
+   presyn_L6_NBC_bIR : 3.000 Hz
+   presyn_L6_NBC_bST : 29.481 Hz
+   L6_NBC_cAC : 0.000 Hz
+   presyn_L6_NBC_cAC : 11.158 Hz
+   presyn_L6_NBC_cIR : 3.571 Hz
+   L6_NBC_cNA : 0.000 Hz
+   presyn_L6_NBC_cNA : 29.500 Hz
+   L6_NBC_cST : 0.000 Hz
+   presyn_L6_NBC_cST : 23.297 Hz
+   presyn_L6_NBC_dST : 28.000 Hz
+   presyn_L6_NGC_bNA : 14.000 Hz
+   presyn_L6_NGC_cAC : 10.000 Hz
+   presyn_L6_NGC_cNA : 21.636 Hz
+   presyn_L6_NGC_cST : 0.000 Hz
+   presyn_L6_SBC_bNA : 37.250 Hz
+   L6_SBC_cAC : 0.000 Hz
+   presyn_L6_SBC_cAC : 22.435 Hz
+   presyn_L6_SBC_dNA : 25.263 Hz
+   L6_TPC_L1_cAD : 0.000 Hz
+   presyn_L6_TPC_L1_cAD : 1.993 Hz
+   L6_TPC_L4_cAD : 0.000 Hz
+   presyn_L6_TPC_L4_cAD : 2.787 Hz
+   L6_UTPC_cAD : 0.000 Hz
+   presyn_L6_UTPC_cAD : 2.943 Hz
+   presyn_ss_RTN_o : 9.671 Hz
+   presyn_ss_RTN_m : 10.053 Hz
+   presyn_ss_RTN_i : 9.418 Hz
+   presyn_VPL_sTC : 1.046 Hz
+   presyn_VPM_sTC : 1.055 Hz
+   presyn_POm_sTC_s1 : 1.647 Hz
+Saving output as ../data/v200_batch1/v200_batch1_0_data.pkl ... 
+Finished saving!
+  Done; saving time = 7.28 s.
+Plotting 2D representation of network cell locations and connections...
+Preparing spike data...
+Plotting raster...
+Plotting recorded cell traces ... trace
+  Done; plotting time = 7.89 s
+
+Total time = 724.10 s

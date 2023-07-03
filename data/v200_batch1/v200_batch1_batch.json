@@ -1,0 +1,32 @@
+{
+    "batch": {
+        "batchLabel": "v200_batch1",
+        "cfgFile": "cfg.py",
+        "evolCfg": {
+            "fitnessFunc": "removed"
+        },
+        "initCfg": {},
+        "method": "grid",
+        "netParamsFile": "netParams.py",
+        "params": [
+            {
+                "label": [
+                    "seeds",
+                    "stim"
+                ],
+                "values": [
+                    1000
+                ]
+            }
+        ],
+        "runCfg": {
+            "cores": 4,
+            "mpiCommand": "mpiexec",
+            "script": "init.py",
+            "skip": true,
+            "type": "mpi_direct"
+        },
+        "saveFolder": "../data/v200_batch1",
+        "seed": null
+    }
+}
