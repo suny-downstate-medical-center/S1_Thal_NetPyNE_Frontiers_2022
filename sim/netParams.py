@@ -118,8 +118,8 @@ for metype in cellsVSName.keys(): # metype
             netParams.popParams[metype] = {'cellType': metype, 'cellModel': 'HH_full', 'ynormRange': layer[layernumber], 
                                                 'numCells': int(cfg.Nmorpho[metype]), 'diversity': True}
             
-    if np.size(cellsList) > 0:
-        netParams.popParams['presyn_'+metype] = {'cellModel': 'VecStim', 'cellsList': cellsList}
+        # if np.size(cellsList) > 0:
+       #      netParams.popParams['presyn_'+metype] = {'cellModel': 'VecStim', 'cellsList': cellsList}
         
     # print(metype,np.size(cellsList),cfg.Nmorpho[metype],cfg.cellNumber[metype])
 # print(netParams.popParams.keys())
@@ -179,9 +179,6 @@ for cellName in cfg.S1cells:
         
         #-----------------------------------------------------------------------------------#        
         for section in netParams.cellParams[cellMe]['secLists']['all']:
-            if 'ions' in netParams.cellParams[cellMe]['secs'][section].keys():
-                if 'ca' in netParams.cellParams[cellMe]['secs'][section]['ions'].keys():
-                    netParams.cellParams[cellMe]['secs'][section]['ions']['ca']['o'] = cfg.cao_secs      
                     
             randRotationAngle = 2.0*np.pi*np.random.rand() # np.pi/2.0  # rand.uniform(0, 6.2832)  #    
         
