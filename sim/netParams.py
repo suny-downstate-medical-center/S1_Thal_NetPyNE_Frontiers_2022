@@ -112,11 +112,11 @@ for metype in cellsVSName.keys(): # metype
     if  metype in cfg.Nmorpho.keys() and metype[0] == 'L':        
         layernumber = metype[1:2]
         if layernumber == '2':
-            netParams.popParams[metype] = {'cellType': metype, 'cellModel': 'HH_full', 'ynormRange': layer['23'], 
-                                                'numCells': int(cfg.Nmorpho[metype]), 'diversity': True}
+            netParams.popParams[metype] = {'cellType': cfg.cellLabel[metype] + '_' + str(1), 'cellModel': 'HH_full', 'ynormRange': layer['23'], 
+                                                'numCells': int(cfg.Nmorpho[metype])}
         else:
-            netParams.popParams[metype] = {'cellType': metype, 'cellModel': 'HH_full', 'ynormRange': layer[layernumber], 
-                                                'numCells': int(cfg.Nmorpho[metype]), 'diversity': True}
+            netParams.popParams[metype] = {'cellType': cfg.cellLabel[metype] + '_' + str(1), 'cellModel': 'HH_full', 'ynormRange': layer[layernumber], 
+                                                'numCells': int(cfg.Nmorpho[metype])}
             
         # if np.size(cellsList) > 0:
        #      netParams.popParams['presyn_'+metype] = {'cellModel': 'VecStim', 'cellsList': cellsList}
