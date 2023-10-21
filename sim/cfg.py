@@ -125,7 +125,7 @@ for cellLabel in spkTimes.keys():
 
 #------------------------------------------------------------------------------
 cfg.cynradNumber = 1
-cfg.fracmorphoradius = 1.0/15.0
+cfg.fracmorphoradius = 1.0/50.0
 
 excluderadius2a = (cfg.cynradNumber-1)*(0.5*cfg.fracmorphoradius)**2
 excluderadius2b = (cfg.cynradNumber)*(0.5*cfg.fracmorphoradius)**2
