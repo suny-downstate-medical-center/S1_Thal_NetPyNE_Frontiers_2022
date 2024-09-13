@@ -28,7 +28,7 @@ cfg.coreneuron = True
 #------------------------------------------------------------------------------
 cfg.duration = 1.5*1e4 ## Duration of the sim, in ms  
 cfg.dt = 0.025
-cfg.seeds = {'conn': 4322, 'stim': 4322, 'loc': 4322} 
+cfg.seeds = {'cell': 4322, 'conn': 4322, 'stim': 4322, 'loc': 4322} 
 cfg.hParams = {'celsius': 34, 'v_init': -65}  
 cfg.verbose = False
 cfg.createNEURONObj = True
